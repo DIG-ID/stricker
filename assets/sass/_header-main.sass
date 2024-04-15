@@ -1,0 +1,75 @@
+.mobile-menu-toggle
+  @apply w-8 h-8 lg:hidden lg:invisible
+  .bars
+    @apply relative block overflow-hidden h-full w-full
+    .bar
+      @apply block w-8 h-[2px] bg-black absolute transition-all duration-300 ease-in-out opacity-100
+      &:nth-child(1)
+        @apply top-2 left-0
+      &:nth-child(2)
+        @apply top-4 left-0
+      &:nth-child(3)
+        @apply top-6 left-0
+
+#header-main.mobile-menu-open
+  .mobile-menu-toggle
+    .bars
+      .bar
+        @apply block w-8 h-[2px] bg-black absolute
+        &:nth-child(1)
+          @apply rotate-45 translate-y-2
+        &:nth-child(2)
+          @apply opacity-0
+        &:nth-child(3)
+          @apply -rotate-45 -translate-y-2
+
+
+
+#main-menu
+  @apply  lg:pt-4 lg:pb-8 pb-2
+  .menu-item
+    @apply border-b border-b-blue lg:border-none
+    a
+      @apply inline-block font-transducer lg:font-transducer text-[13px] text-[#a5a5a5] lg:text-blue leading-7 lg:leading-8 tracking-[2px] lg:tracking-wide uppercase hover:text-blue py-2 lg:py-0
+      @extend .hs-transition--default
+    &.current-menu-item
+      a
+        @apply text-blue
+
+#header-main
+  .menu-wrapper
+    .wpml-ls
+      border: initial
+      @apply p-0
+      ul
+        @apply pb-2 lg:pb-0
+        li.wpml-ls-item
+          a.wpml-ls-link
+            @apply font-transducer text-[13px] text-[#a5a5a5] lg:text-blue tracking-wider py-2 px-0 mr-2 hover:text-blue
+            @extend .hs-transition--default
+
+  .menu-extras
+    @apply w-full hidden invisible lg:block lg:visible
+    .socials-wrapper
+      @apply flex items-center py-3
+      .social-link
+        @apply mr-4
+        &:hover
+          svg
+            path
+              @apply fill-blue
+        svg
+          @apply object-cover h-4
+          path
+            @apply fill-blue
+            @extend .hs-transition--default
+    &--sc
+      @apply pt-2 pb-8
+    &--links
+      #main-menu-extras
+        @apply pb-4
+        li.menu-item
+          @apply leading-none
+          a
+            @apply font-transducer text-[13px] text-blue tracking-wide uppercase hover:text-blue
+            @extend .hs-transition--default
