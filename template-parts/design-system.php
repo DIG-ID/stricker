@@ -129,3 +129,20 @@
         </div>
     </div>
 </section>
+
+
+<section class="section-buttons bg-dark-blue">
+    <div class="st-grid st-padding py-24">
+        <div class="st-container st-grid">
+            <div class="col-span-4">
+                <a href="#" class="btn"></a>
+            </div>
+            <div class="col-span-4">
+                
+            </div>
+            <div class="col-span-4">
+                
+            </div>
+        </div>
+    </div>
+</section>
