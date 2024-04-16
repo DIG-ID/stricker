@@ -37,8 +37,11 @@ html.lenis
 
 
 // Grid classes
-.st-container
-  @apply px-5 sm:px-11 md:px-12 xl:px-16 2xl:px-8 mx-auto w-full max-w-[1400px]
-
 .st-grid
-  @apply grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-4 lg:gap-8
+  @apply grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-8
+
+.st-padding
+  @apply px-5 md:px-0 mx-auto w-full
+
+.st-container
+  @apply col-span-2 md:col-span-4 xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2

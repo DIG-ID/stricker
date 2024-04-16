@@ -11,7 +11,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      transducer: ['Transducer', 'sans-serif'],
+      transducer: ['transducer', 'sans-serif'],
+      transducerCondensed: ['transducer-condensed', 'sans-serif'],
+      transducerExtended: ['transducer-extended', 'sans-serif'],
     },
 
     extend: {
