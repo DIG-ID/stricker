@@ -131,17 +131,17 @@
 </section>
 
 
-<section class="section-buttons bg-dark-blue">
-    <div class="st-grid st-padding py-24">
-        <div class="st-container st-grid">
-            <div class="col-span-4">
+<section class="section-button">
+    <div class="st-grid st-padding">
+        <div class="st-container st-grid bg-dark-blue">
+            <div class="col-span-4 p-10">
                 <a href="#" class="btn"></a>
             </div>
-            <div class="col-span-4">
-                
+            <div class="col-span-4 bg-blue p-10">
+                <a href="#" class="btn-arrow text-dark-blue">My ATP Profile</a>
             </div>
-            <div class="col-span-4">
-                
+            <div class="col-span-4 p-10">
+                <a href="#" class="btn-arrow-caps text-blue">Enter Shop</a>
             </div>
         </div>
     </div>
