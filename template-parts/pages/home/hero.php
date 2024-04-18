@@ -1,5 +1,5 @@
-<section class="section-hero bg-dark-blue">
-	<div class="st-grid relative items-center">
+<section class="section-hero bg-dark-blue pb-28">
+	<div class="section__arrow-down st-grid relative items-center">
 		<div class="col-span-2 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2 z-10 absolute" style="user-select: none;">
 			<p class="st-subtitle-bi-caps text-light-blue"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></p>
 			<p class="st-title-big st-text-outline-big text-transparent"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></p>
@@ -10,7 +10,7 @@
 		<?php
 		$hero_video = get_field('hero_video');
 		if( $hero_video ): ?>
-			<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+			<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: none;">
 				<source src="<?php echo esc_url($hero_video['url']); ?>" type="<?php echo esc_attr($hero_video['mime_type']); ?>">
 				Your browser does not support the video tag.
 			</video>

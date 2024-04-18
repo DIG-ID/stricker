@@ -21,19 +21,6 @@ function stricker_theme_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
-	// Update thumbnail size.
-	update_option( 'thumbnail_size_w', 737 );
-	update_option( 'thumbnail_size_h', 200 );
-	update_option( 'thumbnail_crop', true );
-
-	// Update medium size.
-	update_option( 'medium_size_w', 956 );
-	update_option( 'medium_size_h', 500 );
-
-	// Update large size.
-	update_option( 'large_size_w', 1920 );
-	update_option( 'large_size_h', 800 );
-
 	//add_image_size( 'image-square', 1024, 1024, array( 'center', 'center' ) );
 
 
