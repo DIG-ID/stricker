@@ -13,8 +13,8 @@
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-2 xl:col-end-5 relative">
             <div class="absolute w-[650px]">
-                <p class="st-title text-blue xl:pt-56 xl:pb-12"><?php esc_html_e( 'Playing tennis is my', 'stricker' ); ?><br><?php esc_html_e( 'greatest passion.', 'stricker' ); ?></p>
-                <p class="st-subtitle-i font-[545] text-dark-blue"><?php esc_html_e( 'I am pursuing this goal with a commitment to improve', 'stricker' ); ?><br><?php esc_html_e( ' every game, every point, every hit on the ball.', 'stricker' ); ?></p>
+                <p class="st-title text-blue xl:pt-56 xl:pb-12"><?php esc_html_e( 'Tennis ist meine', 'stricker' ); ?><br><?php esc_html_e( ' Leidenschaft.', 'stricker' ); ?></p>
+                <p class="st-subtitle-i font-[545] text-dark-blue"><?php esc_html_e( 'Im Juniorentennis konnte ich bereits unvergessliche Momente erleben. Jetzt geht es darum, besser zu werden und den nächsten Schritt zu packen. ', 'stricker' ); ?><br><?php esc_html_e( 'Das geht nur zusammen. Deshalb schon jetzt: Danke für Deine Unterstützung!', 'stricker' ); ?></p>
             </div>
             
         </div>
@@ -34,16 +34,16 @@
                         <span class="st-subtitle-b-caps !leading-6">Stricker</span>
                     </div>
                     <div class="w-1/2">
-                        <span class="st-subtitle-caps !leading-6">Born:</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">1990</span>
+                        <span class="st-subtitle-caps !leading-6">Geboren:</span><br>
+                        <span class="st-subtitle-b-caps !leading-6">2002</span>
                     </div>
                 </div>
                 
                 <div class="border-t-2 border-blue xl:col-span-2 pt-5 flex items-start text-dark-blue">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/swiss-flag.svg" title="Flag" alt="flag" class="w-[77px]">
                     <div class="pl-5">
-                        <span class="st-subtitle-caps !leading-6">Hometown,</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">Switzerland</span>
+                        <span class="st-subtitle-caps !leading-6">Herkunftsort,</span><br>
+                        <span class="st-subtitle-b-caps !leading-6">Schweiz</span>
                     </div>
                 </div>
                 <div class="xl:col-span-6">
