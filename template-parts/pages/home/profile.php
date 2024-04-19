@@ -41,9 +41,9 @@
                 
                 <div class="border-t-2 border-blue xl:col-span-2 pt-5 flex items-start text-dark-blue">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/swiss-flag.svg" title="Flag" alt="flag" class="w-[77px]">
-                    <div class="pl-5">
-                        <span class="st-subtitle-caps !leading-6">Herkunftsort,</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">Schweiz</span>
+                    <div class="pl-2">
+                        <span class="st-subtitle-caps !leading-6">Heimatort,</span><br>
+                        <span class="st-subtitle-b-caps !leading-6">Grosshöchstetten</span>
                     </div>
                 </div>
                 <div class="xl:col-span-6">
