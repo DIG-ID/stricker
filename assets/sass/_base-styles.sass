@@ -46,3 +46,15 @@ html.lenis
 
 .st-container
   @apply col-span-2 md:col-span-4 xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2
+
+
+//Zoom images on scroll
+.zoom-on-scroll
+  width: 100%
+  overflow: hidden
+  
+.zoom-on-scroll img
+  transition: transform 0.5s ease
+
+.zoomed
+  transform: scale(1.2)

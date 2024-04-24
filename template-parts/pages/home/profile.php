@@ -1,4 +1,4 @@
-<section class="section-hero relative pt-28">
+<section class="section-profile relative pt-28">
     <div class="absolute inset-0 overflow-hidden -mt-[2px]">
         <div class="absolute inset-0 bg-dark-blue" style="clip-path: polygon(0 0, 100% 0, 100% 300px, 0 500px);"></div>
     </div>
@@ -6,9 +6,14 @@
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-1">
         <?php 
             $image = get_field( 'profile_profile_pic' );
-            if ( $image ) :
-                echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) );
-            endif;
+            if ( $image ) : ?>
+            <div class="overflow-hidden relative" style="width: 100%; height: 100%;">
+                <div class="zoom-on-scroll" style="transition: transform 0.5s ease;">
+                    <?php echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
+                    <div class="mask absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, transparent 150%);"></div>
+                </div>
+            </div>
+            <?php endif;
         ?>
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-2 xl:col-end-5 relative">
@@ -47,14 +52,18 @@
                     </div>
                 </div>
                 <div class="xl:col-span-6">
-                <?php 
-                    $image = get_field( 'profile_player_pic' );
-                    if ( $image ) :
-                        echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) );
-                    endif;
-                ?>
+                    <?php 
+                        $image = get_field( 'profile_player_pic' );
+                        if ( $image ) : ?>
+                            <div class="overflow-hidden relative" style="width: 100%; height: 100%;">
+                                <div class="zoom-on-scroll" style="transition: transform 0.5s ease;">
+                                    <?php echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
+                                    <div class="mask absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, transparent 150%);"></div>
+                                </div>
+                            </div>
+                        <?php endif;
+                    ?>
                 </div>
-            
             </div>
         </div>
         
