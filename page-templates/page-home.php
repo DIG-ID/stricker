@@ -12,6 +12,7 @@ if ( have_posts() ) :
 			get_template_part( 'template-parts/pages/home/profile' );
 			get_template_part( 'template-parts/pages/home/tour' );
 			get_template_part( 'template-parts/pages/home/autograph' );
+			get_template_part( 'template-parts/pages/home/partners' );
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
