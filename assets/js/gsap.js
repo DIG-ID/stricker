@@ -39,18 +39,39 @@ $(function() {
    *               Home Page               *
    *                                       *
    ****************************************/
-  /*if ( $(".page-template-page-home")[0] ) {
-    // Images parallax
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.section-hero',
-        scrub: true,
-        pin: false,
-        helpers: true,
-      }
-    });
+  if ( $(".page-template-page-home")[0] ) {
+    
+    const items = document.querySelectorAll(".number-anim");
+    const sectionProfile = document.querySelector("#section-profile");
 
-    tl.fromTo('.section-hero', { height: 0 }, { height: '70svh', ease: 'none' });
-  };*/
+    // Callback function to animate the numbers when section-profile enters the viewport
+    function animateNumbers(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          gsap.from(items, {
+            textContent: 0,
+            duration: 2,
+            ease: "power1.in",
+            snap: { textContent: 1 },
+            stagger: {
+              each: 1.0,
+              onUpdate: function() {
+                this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
+              },
+            }
+          });
+          observer.unobserve(sectionProfile); // Stop observing once animation is triggered
+        }
+      });
+    }
+
+    // Intersection Observer setup
+    const observer = new IntersectionObserver(animateNumbers, { threshold: 0 });
+
+    // Observe the section-profile element
+    observer.observe(sectionProfile);
+
+
+  };
 
 });
