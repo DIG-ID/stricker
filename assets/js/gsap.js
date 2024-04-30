@@ -55,9 +55,7 @@ $(function() {
             snap: { textContent: 1 },
             stagger: {
               each: 1.0,
-              onUpdate: function() {
-                this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
-              },
+              
             }
           });
           observer.unobserve(sectionProfile); // Stop observing once animation is triggered
