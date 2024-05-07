@@ -1,36 +1,44 @@
-<header id="main-header" class="main-header" itemscope itemtype="http://schema.org/WebSite">
-	<nav class="navbar fixed-top navbar-dark bg-dark-blue" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'digid' ); ?>">
-		<div class="grid grid-cols-5 py-[42px]">
-			<div class="col-span-2 flex justify-start">
-				<div class="navbar-actions">
-					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
-						<span class="icon-left"></span>
-						<span class="icon-right"></span>
+<header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
+	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'stricker' ); ?>">
+		<div class="menu-bg"></div>
+		<div class="grid grid-cols-3 px-16 py-10">
+			<div class="col-span-1 flex justify-start items-center">
+				<div class="menu-toggle-wrapper">
+					<button class="menu-toggle">
+						<span class="menu-toggle__bars">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</span>
+						<span class="menu-toggle__text"><?php esc_html_e( 'Menu', 'stricker' ); ?></span>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location'  => 'main-menu',
-							'menu_id'         => 'main-menu',
-							'container_class' => '',
-							'menu_class'      => 'main-menu-top-level',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-							'fallback_cb'     => '__return_false',
-						)
-					);
-					?>
+			</div>
+			<div class="col-span-1 flex justify-center items-center">
+				<div class="site-branding text-white">
+					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><?php do_action( 'theme_logo' ); ?></a>
 				</div>
 			</div>
-			<div class="col-span-1 flex justify-center">
-				<div class="site-branding">
-					<div class="navbar-brand custom-logo-link max-w-[88px]"><?php the_custom_logo(); ?></div>
-				</div>
-			</div>
-			<div class="col-span-2 flex justify-end">
+			<div class="col-span-1 flex justify-end items-center gap-x-8">
+				<a href="#" class="btn-arrow-caps text-blue"><?php esc_html_e( 'Enter Shop', 'stricker' ); ?></a>
 				<?php do_action( 'wpml_add_language_selector' ); ?>
 			</div>
+		</div>
+		<div class="menu-wrapper w-full top-0 left-0 bottom-0 hidden relative">
+			<div class="menu-link-image-container absolute top-0 left-0 pointer-events-none hidden"></div>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location'  => 'main-menu',
+					'menu_id'         => 'main-menu',
+					'container_class' => '',
+					'menu_class'      => 'main-menu-top-level',
+					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					'fallback_cb'     => '__return_false',
+					'walker'          => new Stricker_Menu_Walker(),
+				)
+			);
+			?>
 		</div>
 	</nav>
 </header>

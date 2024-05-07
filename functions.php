@@ -60,6 +60,8 @@ function stricker_theme_footer_widgets_init() {
 add_action( 'widgets_init', 'stricker_theme_footer_widgets_init' );
 
 
+
+
 /**
  * Enqueue styles and scripts
  */
@@ -71,9 +73,9 @@ function stricker_theme_enqueue_styles() {
 
 	// Register Theme main style.
 	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
-
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'theme-styles' );
+	wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/evg0ous.css', array(), $theme_version );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, false );
@@ -106,3 +108,6 @@ require get_template_directory() . '/inc/theme-template-tags.php';
 
 // The theme admin settings.
 require get_template_directory() . '/inc/theme-admin-settings.php';
+
+// The theme custom menu walker settings.
+require get_template_directory() . '/inc/theme-custom-menu-walker.php';
