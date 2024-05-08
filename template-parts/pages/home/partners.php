@@ -1,6 +1,6 @@
-<section class="section-autograph bg-dark-blue pb-8">
+<section class="section-partners bg-dark-blue pb-8">
     <div class="st-grid relative">
-        <div class="col-span-2 md:col-span-6 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2 py-24 border-y-2 border-blue">
+        <div class="col-span-2 md:col-span-6 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2 py-5 md:py-24 border-y-2 border-blue">
             <div class="swiper swiper-partner">
                 <div class="swiper-wrapper">
                     <?php
