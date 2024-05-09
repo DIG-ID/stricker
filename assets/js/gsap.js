@@ -112,4 +112,28 @@ $(function() {
 
   };
 
+  /*****************************************
+   *                                       *
+   *               Profile Page               *
+   *                                       *
+   ****************************************/
+  if ( $(".page-template-page-profile")[0] ) {
+    
+    let sections = gsap.utils.toArray(".panel");
+
+    let scrollTween = gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none", // <-- IMPORTANT!
+        scrollTrigger: {
+          trigger: ".scroll-section",
+          pin: true,
+          scrub: 0.1,
+          //snap: directionalSnap(1 / (sections.length - 1)),
+          end: "+=3000"
+        }
+      });
+
+
+  };
+
 });

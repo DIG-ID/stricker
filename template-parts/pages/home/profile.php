@@ -5,11 +5,11 @@
 	<div class="st-grid !px-0 xl:grid-rows-2 grid-flow-col relative z-10">
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-1">
         <?php 
-            $image = get_field( 'profile_profile_pic' );
-            if ( $image ) : ?>
+            $image_1 = get_field( 'profile_profile_pic' );
+            if ( $image_1 ) : ?>
             <div class="overflow-hidden relative" style="width: 100%; height: 100%;">
                 <div class="zoom-on-scroll" style="transition: transform 0.5s ease;">
-                    <?php echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
+                    <?php echo wp_get_attachment_image( $image_1, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
                     <div class="mask absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, transparent 150%);"></div>
                 </div>
             </div>
@@ -52,11 +52,11 @@
                 </div>
                 <div class="xl:col-span-6">
                     <?php 
-                        $image = get_field( 'profile_player_pic' );
-                        if ( $image ) : ?>
+                        $image_2 = get_field( 'profile_player_pic' );
+                        if ( $image_2 ) : ?>
                             <div class="overflow-hidden relative" style="width: 100%; height: 100%;">
                                 <div class="zoom-on-scroll" style="transition: transform 0.5s ease;">
-                                    <?php echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
+                                    <?php echo wp_get_attachment_image( $image_2, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
                                     <div class="mask absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, transparent 150%);"></div>
                                 </div>
                             </div>
