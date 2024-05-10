@@ -18,8 +18,8 @@
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-2 xl:col-end-5 relative only-desktop hidden xl:block">
             <div class="xl:absolute w-full xl:w-[650px]">
-                <p class="st-title text-blue xl:pt-56 xl:pb-12"><?php esc_html_e( 'Tennis ist meine', 'stricker' ); ?><br><?php esc_html_e( ' Leidenschaft.', 'stricker' ); ?></p>
-                <p class="st-subtitle-i font-[545] text-dark-blue"><?php esc_html_e( 'Im Juniorentennis konnte ich bereits unvergessliche Momente erleben. Jetzt geht es darum, besser zu werden und den nächsten Schritt zu packen. ', 'stricker' ); ?><br><?php esc_html_e( 'Das geht nur zusammen. Deshalb schon jetzt: Danke für Deine Unterstützung!', 'stricker' ); ?></p>
+                <p class="st-title text-blue xl:pt-56 xl:pb-12"><?php the_field( 'profile_title' ); ?></p>
+                <p class="st-subtitle-i font-[545] text-dark-blue"><?php the_field( 'profile_text' ); ?></p>
             </div>
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-12 xl:col-start-5 xl:col-end-13 xl:grid xl:grid-cols-8 gap-6 xl:gap-8 row-span-2 md:pt-9">
