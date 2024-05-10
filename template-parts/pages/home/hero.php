@@ -1,9 +1,11 @@
 <section class="section-hero bg-dark-blue pt-80 pb-20 xl:pt-[154px] xl:pb-28">
 	<div class="section__arrow-down st-grid relative items-center">
 		<div class="col-span-2 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2 z-10 xl:absolute" style="user-select: none;">
-			<p class="st-subtitle-bi-caps text-light-blue"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></p>
-			<p class="st-title-big st-text-outline-big text-transparent"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></p>
-			<p class="st-title-big st-text-outline-big text-blue"><?php esc_html_e( 'STRICKER', 'stricker' ); ?></p>
+			<h1>
+				<span class="st-subtitle-bi-caps text-light-blue"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></span>
+				<span class="st-title-big st-text-outline-big text-transparent"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></span>
+				<span class="st-title-big st-text-outline-big text-blue"><?php esc_html_e( 'STRICKER', 'stricker' ); ?></span>
+			</h1>
 			<p class="st-body-dates text-light-blue mt-20 max-w-64 md:max-w-80 xl:max-w-none"><?php the_field( 'hero_intro_text' ) ?></p>
 		</div>
 		<div class="hidden xl:block xl:col-span-9 xl:col-start-4 bg-black h-[824px] top-0 right-0 w-full z-0">
