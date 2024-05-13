@@ -19,41 +19,121 @@
             <div class="col-span-6 xl:col-span-3">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Last', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
-                    <?php
-                    $tournament_query = new WP_Query(array(
-                        'post_type' => 'tournament', 
-                        'posts_per_page' => 1,
-                    ));
+                <?php
+                $current_date = date('Ymd');
+                $tournament_query = new WP_Query(array(
+                    'post_type'      => 'tournament',
+                    'posts_per_page' => -1, // Retrieve all posts
+                ));
 
-                    // Check if any posts are found
-                    if ($tournament_query->have_posts()) :
-                        while ($tournament_query->have_posts()) :
-                            $tournament_query->the_post();
+                // Flag to track if a tournament post is found
+                $tournament_found = false;
+
+                // Initialize variables to store details of the tournament post with end date before today
+                $selected_tournament_title = '';
+                $selected_tournament_start_date = '';
+                $selected_tournament_end_date = '';
+
+                // Check if any posts are found
+                if ($tournament_query->have_posts()) :
+                    while ($tournament_query->have_posts()) :
+                        $tournament_query->the_post();
+
+                        // Get start_date and end_date using ACF
+                        $start_date = get_field('start_date');
+                        $end_date = get_field('end_date');
+
+                        // Convert ACF date format to Ymd for comparison
+                        $end_date_Ymd = date('Ymd', strtotime($end_date));
+
+                        // Check if the end date of the tournament is before today's date
+                        if ($end_date_Ymd && $end_date_Ymd < $current_date) :
+                            // Store details of the tournament post
+                            $selected_tournament_title = get_the_title();
+                            $selected_tournament_start_date = $start_date;
+                            $selected_tournament_end_date = $end_date;
+
+                            // Set flag to true
+                            $tournament_found = true;
+
+                            // Break out of the loop as we found the desired tournament post
+                            break;
+                        endif;
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+
+                // If a tournament post with end date before today is found, display its details
+                if ($tournament_found) :
+                    // Convert ACF date format to d/m/Y for display
+                    $start_date_display = date('d/m/Y', strtotime($selected_tournament_start_date));
+                    $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
-                            <p class="st-body-dates text-blue"><?php echo get_field('start_date'); ?></p>
-                            <p class="st-subtitle-caps text-light-blue"><?php the_title(); ?></p>
-                            <p class="st-subtitle text-blue"><?php echo get_field('location'); ?></p>
-                    <?php
-                        endwhile;
-                        wp_reset_postdata();
-                    else :
-                        // Display custom content if no posts are found
-                    ?>
-                        <p class="st-body-dates text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
-                        <p class="st-subtitle-caps text-light-blue"><?php esc_html_e( 'No Current Tournament', 'stricker' ); ?></p>
-                        <p class="st-subtitle text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
-                    <?php
-                    endif;
-                    ?>
+                    <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
+                    <p class="st-subtitle-caps text-light-blue"><?php echo $selected_tournament_title; ?></p>
+                    <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
+                <?php else : ?>
+                    <!-- If no tournament post with end date before today is found, display custom content -->
+                    <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No previous tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                <?php endif; ?>
+
+
                 </div>
 
             </div>
             <div class="col-span-6 xl:col-span-2">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-[10px] border-blue pb-0 md:pb-[16px] text-right xl:text-left"><?php esc_html_e( 'Current', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-[42px] xl:border-b-2 border-blue">
-                    <p class="st-body-dates text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e( 'No Current Tournament', 'stricker' ); ?></p>
-                    <p class="st-subtitle text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
+                <?php
+                $current_date = date('Ymd');
+                $tournament_query = new WP_Query(array(
+                    'post_type'      => 'tournament',
+                    'posts_per_page' => -1, // Retrieve all posts
+                ));
+
+                // Flag to track if a tournament post is found
+                $tournament_found = false;
+
+                // Check if any posts are found
+                if ($tournament_query->have_posts()) :
+                    while ($tournament_query->have_posts()) :
+                        $tournament_query->the_post();
+
+                        // Get start_date and end_date using ACF
+                        $start_date = get_field('start_date');
+                        $end_date = get_field('end_date');
+
+                        // Convert ACF date format to Ymd for comparison
+                        $start_date_Ymd = date('Ymd', strtotime($start_date));
+                        $end_date_Ymd = date('Ymd', strtotime($end_date));
+
+                        // Check if the current date falls within the tournament dates
+                        if ($start_date_Ymd && $end_date_Ymd && $start_date_Ymd <= $current_date && $end_date_Ymd >= $current_date) :
+                            // Convert ACF date format to d/m/Y for display
+                            $start_date_display = date('d/m/Y', strtotime($start_date));
+                            $end_date_display = date('d/m/Y', strtotime($end_date));
+                            ?>
+                            <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
+                            <p class="st-subtitle-caps text-light-blue"><?php the_title(); ?></p>
+                            <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
+                            <?php
+                            // If a matching tournament is found, set flag to true and break out of the loop
+                            $tournament_found = true;
+                            break;
+                        endif;
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+
+                // If no tournament post is found where the current date falls within the tournament dates, display custom content
+                if (!$tournament_found) :
+                    ?>
+                    <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No Current Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                <?php endif; ?>
                 </div>
             </div>
             <div class="col-span-6 xl:col-span-1 only-desktop hidden xl:block">
@@ -67,9 +147,63 @@
             <div class="col-span-6 xl:col-span-2">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Next', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
-                    <p class="st-body-dates text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e( 'To be announced', 'stricker' ); ?></p>
-                    <p class="st-subtitle text-blue"><?php esc_html_e( '-', 'stricker' ); ?></p>
+                <?php
+                $current_date = date('Ymd');
+                $tournament_query = new WP_Query(array(
+                    'post_type'      => 'tournament',
+                    'posts_per_page' => -1, // Retrieve all posts
+                ));
+
+                // Flag to track if a tournament post is found
+                $tournament_found = false;
+
+                // Initialize variables to store details of the tournament post with the next start_date after today
+                $selected_tournament_title = '';
+                $selected_tournament_start_date = '';
+                $selected_tournament_end_date = '';
+
+                // Check if any posts are found
+                if ($tournament_query->have_posts()) :
+                    while ($tournament_query->have_posts()) :
+                        $tournament_query->the_post();
+
+                        // Get start_date and end_date using ACF
+                        $start_date = get_field('start_date');
+                        $end_date = get_field('end_date');
+
+                        // Convert ACF date format to Ymd for comparison
+                        $start_date_Ymd = date('Ymd', strtotime($start_date));
+
+                        // Check if the start date of the tournament is after today's date
+                        if ($start_date_Ymd && $start_date_Ymd > $current_date) {
+                            // Store details of the tournament post if it's the first post found after today's date
+                            if (!$tournament_found || $start_date_Ymd < $selected_tournament_start_date) {
+                                $selected_tournament_title = get_the_title();
+                                $selected_tournament_start_date = $start_date_Ymd;
+                                $selected_tournament_end_date = $end_date;
+                                $tournament_found = true;
+                            }
+                        }
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+
+                // If a tournament post with start date after today is found, display its details
+                if ($tournament_found) :
+                    // Convert ACF date format to d/m/Y for display
+                    $start_date_display = date('d/m/Y', strtotime($selected_tournament_start_date));
+                    $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
+                    ?>
+                    <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
+                    <p class="st-subtitle-caps text-light-blue"><?php echo $selected_tournament_title; ?></p>
+                    <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
+                <?php else : ?>
+                    <!-- If no tournament post with start date after today is found, display custom content -->
+                    <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No Upcoming Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
+                <?php endif; ?>
+
                 </div>
             </div>
         </div>
