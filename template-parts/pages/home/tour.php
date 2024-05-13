@@ -1,3 +1,6 @@
+<style>
+ 
+</style>
 <section class="section-tour relative py-12 bg-blue overflow-hidden w-[105%] z-10 transform rotate-1 origin-top-left xl:-mt-32">
     <div class="table-row md:grid md:grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-8 px-0">
         <div class="float-left md:float-none md:col-span-2 flex flex-row justify-between"><span class="st-title !font-[418] text-light-blue"><?php esc_html_e( 'On Tour', 'stricker' ) ?></span><span class="st-title text-light-blue px-4 md:px-0">•</span></div>
@@ -14,7 +17,7 @@
         <div class="col-span-2 md:col-span-4 xl:col-span-9 col-start-1 md:col-start-2 xl:col-start-2 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-9">
             <div class="col-span-6 xl:col-span-1 pt-14 items-center flex-col flex xl:block">
                 <img class="xl:float-left w-[67px] pb-7 xl:pb-0" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/cup.svg" alt="tournament cup" title="tournament cup">
-                <p class="xl:float-left st-subtitle-big-regular !text-[28px] md:!text-[45px] text-blue xl:transform xl:-rotate-90 xl:ml-3 pb-10 md:pb-24 xl:pb-0"><?php esc_html_e( 'Tournaments', 'stricker' ) ?></p>
+                <p class="xl:float-left st-subtitle-big-regular !text-[28px] md:!text-[45px] text-blue xl:transform xl:-rotate-90 2xl:ml-3 pb-10 md:pb-24 xl:pb-0"><?php esc_html_e( 'Tournaments', 'stricker' ) ?></p>
             </div>
             <div class="col-span-6 xl:col-span-3">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Last', 'stricker' ) ?></p>
@@ -26,7 +29,6 @@
                     'posts_per_page' => -1, // Retrieve all posts
                 ));
 
-                // Flag to track if a tournament post is found
                 $tournament_found = false;
 
                 // Initialize variables to store details of the tournament post with end date before today
@@ -70,12 +72,12 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php echo $selected_tournament_title; ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></p>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with end date before today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No previous tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No previous tournament', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 
@@ -116,7 +118,7 @@
                             $end_date_display = date('d/m/Y', strtotime($end_date));
                             ?>
                             <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                            <p class="st-subtitle-caps text-light-blue"><?php the_title(); ?></p>
+                            <p class="st-subtitle-caps text-light-blue text-nowrap"><?php the_title(); ?></p>
                             <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                             <?php
                             // If a matching tournament is found, set flag to true and break out of the loop
@@ -131,7 +133,7 @@
                 if (!$tournament_found) :
                     ?>
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No Current Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No Current Tournament', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
                 </div>
@@ -195,12 +197,12 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php echo $selected_tournament_title; ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></p>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with start date after today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue"><?php esc_html_e('No Upcoming Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No Upcoming Tournament', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 

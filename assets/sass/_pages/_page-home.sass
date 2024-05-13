@@ -10,6 +10,19 @@
                 content:""
                 z-index:10
 
+@keyframes moveLeft
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-100%)
+
+.table-row
+    overflow: hidden
+
+.table-row > div
+    animation: moveLeft 5s linear infinite
+    white-space: nowrap
+    
 .clip-path-bg
     clip-path: polygon(0 0, 100% 0, 100% 300px, 0 500px)
 
