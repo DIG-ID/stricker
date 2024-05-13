@@ -1,0 +1,19 @@
+.wpcf7-form
+  .wpcf7-form-control-wrap
+    @apply block mb-6
+    .wpcf7-form-control
+      &.wpcf7-text,
+      &.wpcf7-textarea
+        @apply w-full rounded-[10px] bg-light-blue py-4 px-7 font-transducer text-[17px] uppercase text-dark-blue font-normal leading-[29px] tracking-[0.34px] opacity-100
+        &::placeholder
+          @apply font-transducer text-[17px] uppercase text-dark-blue font-normal leading-[29px] tracking-[0.34px] opacity-100
+    .wpcf7-not-valid-tip
+      @apply font-transducer text-sm text-red-600 font-normal leading-[29px] tracking-[0.34px] mt-2
+
+.st-contact-form
+  @apply grid grid-cols-2 gap-9
+  &--left,
+  &--right
+    @apply col-span-1
+  &--button
+    @apply col-span-2 flex justify-end

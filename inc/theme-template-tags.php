@@ -70,7 +70,7 @@ add_action( 'theme_logo_mobile', 'theme_logo_mobile' );
 /**
  * Get our socials from the theme customizer and display them.
  */
-function ds_theme_socials() {
+function st_theme_socials() {
 	$instagram_url = get_field( 'socials_instagram', 'options' );
 	$facebook_url  = get_field( 'socials_facebook', 'options' );
 	$x_url         = get_field( 'socials_x', 'options' );
@@ -98,21 +98,21 @@ function ds_theme_socials() {
 	echo $social_output;
 }
 
-add_action( 'socials', 'ds_theme_socials' );
+add_action( 'socials', 'st_theme_socials' );
 
 /**
  * Implement and customize Yoast Breadcrumbs.
  */
-function bz_theme_breadcrumbs() {
+function st_theme_breadcrumbs() {
 	if ( function_exists( 'yoast_breadcrumb' ) ) :
-		add_filter( 'wpseo_breadcrumb_separator', function( $separator ) {
-			return '<span class="breadcrumbs-separator"><svg id="breadcrumbs-icon-separator" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 9L4.67453 5.70707C5.10849 5.31818 5.10849 4.68182 4.67453 4.29293L1 1" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </svg></span>';
-		} );
-		yoast_breadcrumb( '<p id="breadcrumbs"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" id="breadcrumbs-icon-home"><g stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#000000"> <path d="M7.846 2.574a.25.25 0 01.308 0l5.25 4.12a.25.25 0 01.096.196v7.36a.75.75 0 001.5 0V6.89a1.75 1.75 0 00-.67-1.377L9.08 1.394a1.75 1.75 0 00-2.16 0l-5.25 4.12A1.75 1.75 0 001 6.89v7.36a.75.75 0 001.5 0V6.89a.25.25 0 01.096-.196l5.25-4.12z"></path> <path d="M6.5 14.25V10.5h3v3.75a.75.75 0 001.5 0v-4C11 9.56 10.44 9 9.75 9h-3.5C5.56 9 5 9.56 5 10.25v4a.75.75 0 001.5 0z"></path> </g> </g></svg>', '</p>' );
+		/*add_filter( 'wpseo_breadcrumb_separator', function( $separator ) {
+			return '<span class="breadcrumbs-separator"><svg id="breadcrumbs-icon-separator" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 9L4.67453 5.70707C5.10849 5.31818 5.10849 4.68182 4.67453 4.29293L1 1" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </svg></span>'
+		} ); */
+		yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
 	endif;
 }
 
-add_action( 'breadcrumbs', 'bz_theme_breadcrumbs' );
+add_action( 'breadcrumbs', 'st_theme_breadcrumbs' );
 
 /**
  * Implement custom made WPML Language Switcher.
