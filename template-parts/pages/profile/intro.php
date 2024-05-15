@@ -1,6 +1,6 @@
 <section class="section-intro bg-dark-blue">
 	<div class="st-grid">
-        <div class="col-span-2 md:col-span-6 xl:col-span-7">
+        <div class="col-span-2 md:col-span-6 xl:col-span-7 order-2 xl:order-1">
         <?php 
             $image_intro = get_field( 'intro_image' );
             if ( $image_intro ) : ?>
@@ -8,9 +8,9 @@
             <?php endif;
         ?>
         </div>
-        <div class="col-span-2 md:col-span-4 xl:col-span-3 col-start-1 md:col-start-2 xl:col-start-9 flex flex-col justify-center items-center">
-            <p class="st-subtitle-big text-light-blue"><?php the_field( 'intro_text_1' ); ?></p>
-            <p class="st-subtitle-big text-blue"><?php the_field( 'intro_text_2' ); ?></p>
+        <div class="col-span-2 md:col-span-4 xl:col-span-3 col-start-1 md:col-start-2 xl:col-start-9 flex flex-col justify-center items-center order-1 xl:order-2 pt-80 xl:pt-0 pb-20 xl:pb-0">
+            <p class="st-subtitle-big text-light-blue max-w-[554px] xl:max-w-none"><?php the_field( 'intro_text_1' ); ?></p>
+            <p class="st-subtitle-big text-blue max-w-[554px] xl:max-w-none"><?php the_field( 'intro_text_2' ); ?></p>
         </div>
     </div>
 </section>

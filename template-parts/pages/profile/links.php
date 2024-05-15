@@ -1,7 +1,7 @@
 <section class="section-links bg-blue">
     <div class="flex py-[60px]">
         <div class="st-grid">
-            <div class="col-span-2 col-start-2">
+            <div class="col-span-2 md:col-span-3 xl:col-span-2 col-start-1 md:col-start-2 xl:col-start-2">
                 <?php 
                 $atp    = get_field( 'links_atp' );
                 if ( $atp ) :
@@ -13,7 +13,7 @@
                 <?php
 				endif; ?>
             </div>
-            <div class="col-span-2 col-start-4">
+            <div class="col-span-2 md:col-span-3 xl:col-span-2 col-start-1 md:col-start-2 xl:col-start-4">
                 <?php 
                 $itf    = get_field( 'links_itf' );
                 if ( $itf ) :
@@ -25,7 +25,7 @@
                 <?php
 				endif; ?>
             </div>
-            <div class="col-span-2 col-start-6">
+            <div class="col-span-2 md:col-span-3 xl:col-span-2 col-start-1 md:col-start-2 xl:col-start-6">
                 <?php 
                 $swisstennis    = get_field( 'links_swisstennis' );
                 if ( $swisstennis ) :
