@@ -63,6 +63,18 @@ document.addEventListener("DOMContentLoaded", () => {
 				});
 			});
 
+			// Event listener for Isotope arrangeComplete event
+			grid.on('arrangeComplete', function(event) {
+				// Get filtered items
+				var filteredItems = grid.filteredItems;
+
+				// Fade in or out the no-items message based on filtered items
+				if (filteredItems.length === 0) {
+						$('#no-items-message').stop().fadeIn(); // Fade in if no items
+				} else {
+						$('#no-items-message').stop().fadeOut(); // Fade out if items present
+				}
+			});
 
 		}
 

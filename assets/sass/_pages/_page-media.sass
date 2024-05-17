@@ -7,14 +7,14 @@
   .filters-select-wrapper
     @apply border-dark-blue border-[2px] border-solid rounded-[190px] cursor-pointer font-transducer font-semibold text-dark-blue text-[17px] leading-[29px] tracking-[0.68px] uppercase relative flex items-center
     &::after
-      @apply w-4 h-3 bg-dark-blue justify-self-end
+      @apply w-4 h-3 bg-dark-blue justify-self-end relative right-3
       content: ''
       clip-path: polygon(100% 0%, 0 0%, 50% 100%)
     select,
     .filters-select-wrapper::after
       grid-area: select
     select
-      @apply appearance-none bg-transparent border-none w-full cursor-[inherit] text-[inherit] font-[inherit] leading-[inherit] m-0 p-0 uppercase
+      @apply appearance-none bg-transparent border-none w-full cursor-[inherit] text-[inherit] font-[inherit] leading-[inherit] m-0 p-0 uppercase px-4 py-1
       outline: none
       &::-ms-expand
         @apply hidden
