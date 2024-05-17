@@ -18,7 +18,7 @@
 						$media_terms = get_terms(
 							array(
 								'taxonomy'   => $media_tax_slug,
-								'hide_empty' => false,
+								'hide_empty' => true,
 							)
 						);
 						?>
