@@ -3,7 +3,7 @@
         <div class="st-container st-container-grid !gap-y-0">
             <div class="col-span-2 md:col-span-6 xl:col-span-10 mb-3"><?php do_action( 'breadcrumbs' ); ?></div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10">
-                <p class="st-title text-blue"><?php esc_html_e( 'Who supports me', 'stricker' );  ?></p>
+                <h1 class="st-title text-blue"><?php esc_html_e( 'Who supports me', 'stricker' );  ?></h1>
             </div>
         </div>
     </div>

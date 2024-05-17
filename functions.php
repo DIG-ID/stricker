@@ -25,6 +25,8 @@ function stricker_theme_setup() {
 
 	add_image_size( 'news-thumb-bigger', 950, 350, array( 'top', 'center' ) );
 
+	add_image_size( 'team-picture', 530, 650, array( 'top', 'center' ) );
+
 
 }
 

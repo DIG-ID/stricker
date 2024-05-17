@@ -3,7 +3,7 @@
         <div class="st-container st-container-grid !gap-y-0">
             <div class="col-span-2 md:col-span-6 xl:col-span-10 mb-3"><?php do_action( 'breadcrumbs' ); ?></div>
             <div class="col-span-2 md:col-span-4 xl:col-span-2">
-                <p class="st-title text-blue"><?php echo get_field( 'news_title', 'option' );  ?></p>
+                <h1 class="st-title text-blue"><?php echo get_field( 'news_title', 'option' );  ?></h1>
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-3 hidden xl:block">
                 <p class="st-body-dates text-light-blue"><?php echo get_field( 'news_intro', 'option' );  ?></p>
