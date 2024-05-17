@@ -27,6 +27,11 @@ function stricker_theme_setup() {
 
 	add_image_size( 'team-picture', 530, 650, array( 'top', 'center' ) );
 
+	add_image_size( 'media-full', 1280 );
+
+	add_image_size( 'media-thumbnail', 600, 480, array( 'center', 'center' ) );
+
+	//add_image_size( 'image-square', 1024, 1024, array( 'center', 'center' ) );
 
 }
 

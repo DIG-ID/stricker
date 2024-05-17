@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const grid = new isotope( '.photo-grid', {
 				// options
 				itemSelector: '.element-item',
-				percentPosition: true,
+				//percentPosition: true,
 				layoutMode: 'fitRows'
 			});
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			
 				// Generate concatenated filter value
 				var filterCombined = concatValues(filters);
-				grid.arrange({filter: filterValue});
+				grid.arrange({filter: filterCombined});
 			});
 
 			// Event listener for reset button
