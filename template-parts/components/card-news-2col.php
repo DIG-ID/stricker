@@ -1,14 +1,14 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-2 md:col-span-4 xl:col-span-3 mb-24 bg-light-blue' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-2 md:col-span-4 xl:col-span-6 mb-24 bg-light-blue' ); ?>>
     <div class="col-span-1 md:col-span-8 xl:col-span-7 col-start-1 xl:col-start-4 order-2 xl:order-3 border-t-[7px] border-blue">
         <?php if (has_post_thumbnail()) : 
-            $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'news-thumb');
+            $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'news-thumb-bigger');
         ?>
             <div class="featured-image mb-4">
                 <img src="<?php echo $full_image_url[0]; ?>" alt="<?php the_title(); ?>" class="object-cover w-full" />
             </div>
         <?php else : ?>
             <div class="featured-image mb-4">
-                <img src="https://placehold.co/453x453" class="object-cover w-full size-overall-square">
+                <img src="https://placehold.co/453x453" class="object-cover w-full size-news-thumb-bigger">
             </div>
         <?php endif; 
         $formatted_date = get_the_date('d/m/y');

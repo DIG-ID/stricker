@@ -21,7 +21,9 @@ function stricker_theme_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
-	//add_image_size( 'image-square', 1024, 1024, array( 'center', 'center' ) );
+	add_image_size( 'news-thumb', 454, 350, array( 'center', 'center' ) );
+
+	add_image_size( 'news-thumb-bigger', 950, 350, array( 'top', 'center' ) );
 
 
 }
