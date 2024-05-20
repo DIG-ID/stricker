@@ -1,5 +1,5 @@
-<div <?php post_class( 'card-team col-span-2 md:col-span-4 xl:col-span-3 mb-24 bg-light-blue' ); ?>>
-    <div class="col-span-1 md:col-span-8 xl:col-span-7 col-start-1 xl:col-start-4 order-2 xl:order-3 text-center">
+<div <?php post_class( 'card-team col-span-1 md:col-span-4 xl:col-span-3 mb-24 bg-light-blue' ); ?>>
+    <div class="text-center">
     <?php 
         $image = get_sub_field('picture');
         $size = 'team-picture';

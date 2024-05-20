@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news mb-10 bg-light-blue border-t-[7px] border-blue' ); ?>>
-<a href="<?php the_permalink(); ?>" class="grid grid-cols-2 md:grid-cols-6 xl:grid-cols-3">
-    <div class="col-span-1 md:col-span-4 xl:col-span-1 col-start-1 md:col-start-2 xl:col-start-1">
+<a href="<?php the_permalink(); ?>" class="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-3">
+    <div class="col-span-1 md:col-span-2 xl:col-span-1 col-start-1 md:col-start-1 xl:col-start-1">
         <?php if (has_post_thumbnail()) : 
             $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'overall-square');
         ?>
@@ -13,7 +13,7 @@
             </div>
         <?php endif; ?>
     </div>
-    <div class="col-span-1 md:col-span-4 xl:col-span-2 col-start-1 md:col-start-2 xl:col-start-2 py-4">
+    <div class="col-span-3 md:col-span-4 xl:col-span-2 col-start-2 md:col-start-3 xl:col-start-2 py-4">
         <?php $formatted_date = get_the_date('d/m/y');
         echo '<p class="st-body-dates text-blue px-5">' . $formatted_date . '</p>';
         ?>

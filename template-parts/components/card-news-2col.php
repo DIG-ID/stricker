@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-2 md:col-span-4 xl:col-span-6 mb-24 bg-light-blue' ); ?>>
-    <div class="col-span-1 md:col-span-8 xl:col-span-7 col-start-1 xl:col-start-4 order-2 xl:order-3 border-t-[7px] border-blue">
+    <div class="border-t-[7px] border-blue">
         <?php if (has_post_thumbnail()) : 
             $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'news-thumb-bigger');
         ?>

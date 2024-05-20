@@ -27,7 +27,7 @@
                     <div class="st-body-dates text-dark-blue mb-20"><?php the_content(); ?></div>
                 </div>
             </div>
-            <div class="col-span-1 md:col-span-6 xl:col-span-3">
+            <div class="col-span-2 md:col-span-6 xl:col-span-3">
                 <div class="w-full bg-blue py-3 px-4 mb-7">
                     <p class="st-subtitle-big text-light-blue"><?php esc_html_e( 'Related News', 'stricker' ) ?></p>
                 </div>
