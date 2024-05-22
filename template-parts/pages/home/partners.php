@@ -13,11 +13,11 @@
                         while ($partner_query->have_posts()) :
                             $partner_query->the_post();
                             $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
-                            $partner_url = get_permalink(); 
+                            $partner_url = get_field('website_url'); 
 
                             echo '<div class="swiper-slide text-center partner-card flex justify-center">';
                             if ($partner_logo && $partner_url) :
-                                echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                                echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img class="max-h-[108px]" src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                             else :
                                 echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                             endif;

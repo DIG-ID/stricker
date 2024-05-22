@@ -29,11 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			speed: 6000,
 			slidesPerView: 'auto',
 			autoplay: {
-				delay: 0,
+				delay: 1,
 				disableOnInteraction: false,
 			},
-			loopAdditionalSlides: 3,
-		});
+		});		
 
 	}, false);
 });

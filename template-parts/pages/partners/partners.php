@@ -23,7 +23,7 @@
                     while ($partner_query->have_posts()) :
                         $partner_query->the_post();
                         $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
-                        $partner_url = get_permalink(); 
+                        $partner_url = get_field('website_url');
 
                         echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
                         if ($partner_logo && $partner_url) :
@@ -64,7 +64,7 @@
                 while ($partner_query->have_posts()) :
                     $partner_query->the_post();
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
-                    $partner_url = get_permalink(); 
+                    $partner_url = get_field('website_url');
 
                     echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
                     if ($partner_logo && $partner_url) :
@@ -105,7 +105,7 @@
                 while ($partner_query->have_posts()) :
                     $partner_query->the_post();
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
-                    $partner_url = get_permalink(); 
+                    $partner_url = get_field('website_url');
 
                     echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
                     if ($partner_logo && $partner_url) :
