@@ -2,7 +2,7 @@
 	<div class="st-grid">
         <div class="st-container st-container-grid">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Main partners', 'stricker' ) ?></p>
+                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Hauptpartner', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
@@ -43,7 +43,7 @@
 
         <div class="st-container st-container-grid mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Premium partners', 'stricker' ) ?></p>
+                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
@@ -84,7 +84,7 @@
 
         <div class="st-container st-container-grid mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Suppliers', 'stricker' ) ?></p>
+                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Lieferanten', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
@@ -125,8 +125,8 @@
 
         <div class="st-container st-container-grid">
             <div class="col-span-2 md:col-span-4 xl:col-span-10 mb-48 mt-20">
-                <span class="st-subtitle-i text-light-blue"><?php esc_html_e( 'Full list of partners is available for', 'stricker' )  ?></span>
-                <a href="#" class="st-subtitle-i text-blue underline"><?php esc_html_e( 'download', 'stricker' ) ?></a>
+                <span class="st-subtitle-i text-light-blue"><?php esc_html_e( 'Die vollständige Liste der Partner steht zum', 'stricker' )  ?></span>
+                <a href="#" class="st-subtitle-i text-blue underline"><?php esc_html_e( 'Download bereit', 'stricker' ) ?></a>
             </div>
         </div>
     </div>

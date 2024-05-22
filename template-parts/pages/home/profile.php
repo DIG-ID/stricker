@@ -24,30 +24,30 @@
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-12 xl:col-start-5 xl:col-end-13 xl:grid xl:grid-cols-8 gap-6 xl:gap-8 row-span-2 md:pt-9">
             <div class="xl:w-80 flex mb-[40px] md:mb-[75px] xl:mb-0">
-                <div class="st-title-big !not-italic text-blue w-[80px] md:w-[190px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[130px]">95</span></div>
+                <div class="st-title-big !not-italic text-blue w-[80px] md:w-[190px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[130px]"><?php the_field( 'profile_singles_ranking' ); ?></span></div>
                 <div class="st-subtitle-bi-caps text-light-blue w-[60px] md:w-[130px] flex justify-end pt-2">Singles<br>Ranking</div>
             </div>
             <div class="xl:w-[260px] xl:col-start-5 flex">
-                <div class="st-title !not-italic text-blue w-[65px] md:w-[170px] xl:w-[140px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[60px]">250</span></div>
+                <div class="st-title !not-italic text-blue w-[65px] md:w-[170px] xl:w-[140px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[60px]"><?php the_field( 'profile_doubles_ranking' ); ?></span></div>
                 <div class="st-subtitle-bi-caps text-light-blue w-[60px] md:w-[120px] flex justify-end pt-1">Doubles<br>Ranking</div>
             </div>
             <div class="only-desktop hidden col-span-1 md:col-span-3 xl:col-span-6 col-start-1 md:col-start-1 xl:col-start-3 xl:pt-40 xl:grid xl:grid-cols-6 gap-x-6 xl:gap-x-8">
                 <div class="border-t-2 border-blue xl:col-span-2 pt-5 flex text-dark-blue">
                     <div class="w-1/2">
-                        <span class="st-subtitle-caps !leading-6">Dominic</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">Stricker</span>
+                        <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Dominic', 'stricker' ) ?></span><br>
+                        <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( 'Stricker', 'stricker' ) ?></span>
                     </div>
                     <div class="w-1/2">
-                        <span class="st-subtitle-caps !leading-6">Geboren:</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">2002</span>
+                        <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Geboren:', 'stricker' ) ?></span><br>
+                        <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( '2002', 'stricker' ) ?></span>
                     </div>
                 </div>
                 
                 <div class="border-t-2 border-blue xl:col-span-2 pt-5 flex items-start text-dark-blue">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/swiss-flag.svg" title="Flag" alt="flag" class="w-[77px]">
                     <div class="pl-2">
-                        <span class="st-subtitle-caps !leading-6">Heimatort,</span><br>
-                        <span class="st-subtitle-b-caps !leading-6">Grosshöchstetten</span>
+                        <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Heimatort,', 'stricker' ) ?></span><br>
+                        <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( 'Grosshöchstetten', 'stricker' ) ?></span>
                     </div>
                 </div>
                 <div class="xl:col-span-6">
@@ -70,20 +70,20 @@
     <div class="st-grid only-mobile block xl:hidden pt-20">
         <div class="border-t-2 border-blue col-span-1 md:col-span-2 col-start-1 md:col-start-2 pt-2 md:pt-5 flex text-dark-blue pb-16">
             <div class="w-1/2">
-                <span class="st-subtitle-caps md:!leading-6">Dominic</span><br>
-                <span class="st-subtitle-b-caps md:!leading-6">Stricker</span>
+                <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Dominic', 'stricker' ) ?></span><br>
+                <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( 'Stricker', 'stricker' ) ?></span>
             </div>
             <div class="w-1/2">
-                <span class="st-subtitle-caps md:!leading-6">Geboren:</span><br>
-                <span class="st-subtitle-b-caps md:!leading-6">2002</span>
+                <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Geboren:', 'stricker' ) ?></span><br>
+                <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( '2002', 'stricker' ) ?></span>
             </div>
         </div>
     
         <div class="border-t-2 border-blue col-span-1 md:col-span-2 pt-2 md:pt-5 flex items-start text-dark-blue">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/swiss-flag.svg" title="Flag" alt="flag" class="w-[56px] md:w-[77px]">
             <div class="pl-2">
-                <span class="st-subtitle-caps md:!leading-6">Heimatort,</span><br>
-                <span class="st-subtitle-b-caps md:!leading-6">Grosshöchstetten</span>
+                <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Heimatort,', 'stricker' ) ?></span><br>
+                <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( 'Grosshöchstetten', 'stricker' ) ?></span>
             </div>
         </div>
         <div class="col-span-2 md:col-span-5 col-start-1 md:col-start-2 gap-x-6">
@@ -103,8 +103,8 @@
         </div>
         <div class="col-span-2 md:col-span-4 col-start-1 md:col-start-2 relative only-desktop block xl:hidden">
             <div class="w-full pt-20 pb-32 pl-6">
-                <p class="st-title text-blue pb-16"><?php esc_html_e( 'Tennis ist meine', 'stricker' ); ?><br><?php esc_html_e( ' Leidenschaft.', 'stricker' ); ?></p>
-                <p class="st-subtitle-i font-[545] text-dark-blue md:max-w-[80%]"><?php esc_html_e( 'Im Juniorentennis konnte ich bereits unvergessliche Momente erleben. Jetzt geht es darum, besser zu werden und den nächsten Schritt zu packen. ', 'stricker' ); ?><br><?php esc_html_e( 'Das geht nur zusammen. Deshalb schon jetzt: Danke für Deine Unterstützung!', 'stricker' ); ?></p>
+                <p class="st-title text-blue pb-16"><?php the_field( 'profile_title' ); ?></p>
+                <p class="st-subtitle-i font-[545] text-dark-blue md:max-w-[80%]"><?php the_field( 'profile_text' ); ?></p>
             </div>
         </div>
     </div>
