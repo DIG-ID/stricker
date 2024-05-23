@@ -2,7 +2,7 @@
  
 </style>
 <section class="section-tour relative py-12 bg-blue overflow-hidden w-[105%] z-10 transform rotate-1 origin-top-left xl:-mt-32">
-    <div class="table-row md:grid md:grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-8 px-0">
+    <div class="animate-element table-row md:grid md:grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-8 px-0">
         <div class="float-left md:float-none md:col-span-2 flex flex-row justify-between"><span class="st-title !font-[418] text-light-blue"><?php esc_html_e( 'On Tour', 'stricker' ) ?></span><span class="st-title text-light-blue px-4 md:px-0">•</span></div>
         <div class="float-left md:float-none md:col-span-2 flex flex-row justify-between"><span class="st-title !font-[418] text-light-blue"><?php esc_html_e( 'On Tour', 'stricker' ) ?></span><span class="st-title text-light-blue px-4 md:px-0">•</span></div>
         <div class="float-left md:float-none md:col-span-2 flex flex-row justify-between"><span class="st-title !font-[418] text-light-blue"><?php esc_html_e( 'On Tour', 'stricker' ) ?></span><span class="st-title text-light-blue px-4 md:px-0">•</span></div>

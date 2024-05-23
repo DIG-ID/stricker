@@ -20,7 +20,7 @@
 		?>
 		</div>
 	</div>
-	<div class="info-box fixed w-full bottom-5 st-grid z-20 -mt-9">
+	<div class="info-box fixed w-full bottom-5 st-grid z-30 -mt-9">
 		<div class="hidden xl:flex justify-center col-span-4 col-start-5">
 			<div class="bg-blue rounded-[40.5px] w-[500px] h-[75px] grid grid-cols-7">
 				<div class="col-span-1 flex flex-col justify-center items-center">
