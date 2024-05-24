@@ -21,10 +21,10 @@
             -webkit-text-stroke-color: #8AE2EF
 
     &-arrow-caps
-        @apply inline-block transition-all duration-150 relative font-transducerCondensed text-[40px] italic font-[545] uppercase
+        @apply inline-block transition-all duration-150 relative font-transducerCondensed text-[18px] md:text-[36px] lg:text-[40px] italic font-[545] uppercase
         &::after
             content: url('/wp-content/themes/stricker/assets/svg/after-arrow-blue.svg')
-            @apply absolute -right-[36px] -bottom-[20px] w-[52px] md:w-[104px]
+            @apply absolute -right-[16px] md:-right-[36px] -bottom-[10px] md:-bottom-[20px] w-[52px] md:w-[104px]
         &:hover
             @apply text-[#08414A]
         &:focus-visible

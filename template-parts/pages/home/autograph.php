@@ -1,7 +1,7 @@
 <section class="section-autograph bg-dark-blue pt-0 pb-20 md:py-32 xl:py-56 -my-1">
     <div class="st-grid relative">
         <div class="container__autograph col-span-2 md:col-span-6 xl:col-span-8 col-start-1 md:col-start-1 xl:col-start-3 flex justify-center">
-            <a href="#">
+            <a href="<?php the_field( 'autograph_link' ); ?>">
                 <div class="circle-mask w-[686px] h-[370px] md:h-[686px] overflow-hidden relative" style="border-radius: 50%;">
                     <?php 
                     $image = get_field( 'tour_autograph_image' );
