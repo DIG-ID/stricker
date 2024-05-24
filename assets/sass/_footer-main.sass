@@ -7,13 +7,15 @@
         @extend .ds-transition--default
 
 .footer-main
+  .footer-logo
+    @apply w-full max-w-[255px] md:max-w-[460px] xl:max-w-[618px] mx-auto xl:mx-0 mb-20 xl:mb-0
   .socials-wrapper
-    @apply flex justify-between w-full
+    @apply flex justify-between xl:w-full
     
 
   .menu-footer-container,
   .menu-footer-menu-container
-    @apply w-full
+    @apply xl:w-full mb-20 xl:mb-0
     .menu-footer-top-level
       @apply flex border-b border-b-blue w-full justify-between 
       .menu-item

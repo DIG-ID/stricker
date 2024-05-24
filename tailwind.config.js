@@ -25,6 +25,7 @@ module.exports = {
         'blue': '#14A5BB',
         'dark-blue': '#001A26',
         'light-blue': '#D0EDF1',
+        'page-bg-light': '#DFF4F7',
       },
       transitionTimingFunction: {
         'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',

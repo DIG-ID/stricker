@@ -1,7 +1,7 @@
 <header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
 	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'stricker' ); ?>">
 		<div class="menu-bg"></div>
-		<div class="grid grid-cols-3 px-16 py-10">
+		<div class="grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-10">
 			<div class="col-span-1 flex justify-start items-center">
 				<div class="menu-toggle-wrapper">
 					<button class="menu-toggle">
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-end items-center gap-x-8">
-				<a href="#" class="btn-arrow-caps text-blue"><?php esc_html_e( 'Enter Shop', 'stricker' ); ?></a>
+				<a href="#" class="btn-arrow-caps text-blue !hidden !invisible xl:block xl:visible"><?php esc_html_e( 'Enter Shop', 'stricker' ); ?></a>
 				<?php do_action( 'wpml_add_language_selector' ); ?>
 			</div>
 		</div>
