@@ -1,6 +1,6 @@
 <section class="section-intro bg-dark-blue">
 	<div class="st-grid">
-        <div class="col-span-2 md:col-span-6 xl:col-span-7 order-2 xl:order-1">
+        <div class="col-span-2 md:col-span-6 xl:col-span-7 order-2 xl:order-1 -ml-6 -mr-6 md:ml-0 md:mr-0">
         <?php 
             $image_intro = get_field( 'intro_image' );
             if ( $image_intro ) : ?>

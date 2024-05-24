@@ -99,7 +99,7 @@
             </div>
         </div>
 
-        <div class="panel st-grid w-[150vw] md:w-[147vw] xl:w-[100vw] py-28 bg-[#DFF4F7]">
+        <div class="panel st-grid w-[145vw] md:w-[147vw] xl:w-[100vw] py-28 bg-[#DFF4F7]">
             <div class="col-span-1 md:col-span-3 xl:col-span-5 grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 col-start-1 md:col-start-1 xl:col-start-2 px-12 xl:px-0">
                 <div class="col-span-1 md:col-span-4 xl:col-span-3 col-start-1 md:col-start-1 xl:col-start-2 flex flex-col justify-end xl:block">
                     <p class="st-subtitle-i mb-24"><?php the_field( 'milestones_content_text_7' ); ?></p>
@@ -123,7 +123,7 @@
             </div>
         </div>
 
-        <div class="panel st-grid w-[150vw] md:w-[163vw] xl:w-[100vw] py-28 bg-[#DFF4F7]">
+        <div class="panel st-grid w-[165vw] md:w-[163vw] xl:w-[100vw] py-28 bg-[#DFF4F7]">
             <div class="col-span-1 md:col-span-2 xl:col-span-3 flex items-center">
                 <p class="st-subtitle-i mb-24"><?php the_field( 'milestones_content_text_8' ); ?></p>
             </div>
@@ -135,7 +135,7 @@
                 <?php endif;
                 ?>
             </div>
-            <div class="col-span-1 md:col-span-2 xl:col-span-3 col-start-2 md:col-start-5 xl:col-start-8 flex justify-center">
+            <div class="col-span-1 md:col-span-2 xl:col-span-3 col-start-2 md:col-start-5 xl:col-start-8 hidden md:flex justify-center">
                 <img class="max-w-[170px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site-logo.svg" alt="logo" title="logo" />
             </div>
         </div>
