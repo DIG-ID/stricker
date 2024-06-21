@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
   //wait until images, links, fonts, stylesheets, and js is loaded
   window.addEventListener("load", () => {
 
+    /*shop btn slider*/
+    var shopBtnSlider = document.querySelector(".shop-btn-slider");
+    var shopBtnContent = document.querySelector(".text-slide");
+    var numberOfCopies = 5;  // Number of times to append the content
+
+    for (var i = 0; i < numberOfCopies; i++) {
+        var shopBtnContentCopy = shopBtnContent.cloneNode(true);
+        shopBtnSlider.appendChild(shopBtnContentCopy);
+    }
+
     /* Hamburguer toggle */
     const $toggleBtn = $('.menu-toggle')
     $toggleBtn.on('click', (e) => {

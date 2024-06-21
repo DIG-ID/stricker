@@ -2,7 +2,9 @@
     &__autograph
         .circle-mask
             &:hover
-                @apply xl:w-[770px] xl:h-[770px]
+                @apply xl:w-[600px] xl:h-[600px]
+                .btn--autograph
+                    @apply bg-[#0D6A78]
             &:after
                 position: absolute
                 width: 100%  
@@ -40,3 +42,18 @@
 @media ( max-width: 768px )
     .clip-path-bg
         clip-path: polygon(0 0, 100% 0, 100% 19%, 0 21%)
+
+.section-profile
+    .st-title--arrow-down
+        &::before
+            content: ''
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 303' fill='none'%3E%3Cpath stroke='%2314A5BB' stroke-linecap='round' stroke-width='2' d='M1 302V1M1 302l14-14'/%3E%3C/svg%3E")
+            background-repeat: no-repeat
+            @apply absolute block -left-8 top-0 xl:top-60 w-4 h-[303px]
+
+
+@media (max-width: 640px)
+    .section-profile
+        .st-title--arrow-down
+            &::before
+                @apply -left-5 top-0 xl:top-60 w-4 h-[143px]

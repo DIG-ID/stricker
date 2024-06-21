@@ -18,8 +18,9 @@
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-4 xl:col-start-2 xl:col-end-5 relative only-desktop hidden xl:block">
             <div class="xl:absolute w-full xl:w-[650px]">
-                <p class="st-title text-blue xl:pt-56 xl:pb-12"><?php the_field( 'profile_title' ); ?></p>
+                <p class="st-title st-title--arrow-down text-blue xl:pt-56 xl:pb-12 relative "><?php the_field( 'profile_title' ); ?></p>
                 <p class="st-subtitle-i font-[545] text-dark-blue"><?php the_field( 'profile_text' ); ?></p>
+
             </div>
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-12 xl:col-start-5 xl:col-end-13 xl:grid xl:grid-cols-8 gap-6 xl:gap-8 row-span-2 md:pt-9">
@@ -103,7 +104,7 @@
         </div>
         <div class="col-span-2 md:col-span-4 col-start-1 md:col-start-2 relative only-desktop block xl:hidden">
             <div class="w-full pt-20 pb-32 pl-6">
-                <p class="st-title text-blue pb-16"><?php the_field( 'profile_title' ); ?></p>
+                <p class="st-title st-title--arrow-down text-blue pb-5 relative"><?php the_field( 'profile_title' ); ?></p>
                 <p class="st-subtitle-i font-[545] text-dark-blue md:max-w-[80%]"><?php the_field( 'profile_text' ); ?></p>
             </div>
         </div>

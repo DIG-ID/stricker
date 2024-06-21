@@ -84,7 +84,8 @@ function stricker_theme_enqueue_styles() {
 	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'theme-styles' );
-	wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/evg0ous.css', array(), $theme_version );
+	//https://use.typekit.net/evg0ous.css first loaded fonts library backup
+	wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, false );

@@ -44,7 +44,7 @@
   .menu-item
     a
       -webkit-text-stroke: 2px #00151F
-      @apply block text-transparent font-transducerExtended text-[40px] md:text-[70px] xl:text-8xl tracking-[1.2px] md:tracking-[2.1px] xl:tracking-[3px] leading-[52px] md:leading-[81px] xl:leading-[111px] uppercase font-black relative transition-all duration-300 ease-out 
+      @apply block text-transparent font-transducerExtended font-black text-[40px] md:text-[70px] xl:text-8xl tracking-[1.2px] md:tracking-[2.1px] xl:tracking-[3px] leading-[52px] md:leading-[81px] xl:leading-[111px] uppercase relative transition-all duration-300 ease-out 
       &::before
         @apply absolute left-0 top-0 inline-block h-full w-full overflow-hidden whitespace-pre break-normal z-20 transition-all duration-300 ease-out
         -webkit-text-fill-color: #00151F
@@ -101,11 +101,11 @@
       .bar
         @apply bg-dark-blue
         &:nth-child(1)
-          @apply rotate-45 translate-y-3
+          @apply rotate-45 translate-y-2
         &:nth-child(2)
           @apply opacity-0
         &:nth-child(3)
-          @apply -rotate-45 -translate-y-3
+          @apply -rotate-45 translate-y-[-0.65rem]
     &__text
       @apply text-dark-blue
   .site-branding
@@ -114,6 +114,9 @@
         @apply fill-dark-blue
   .btn-arrow-caps
     @apply text-dark-blue
+    &::after
+      @apply transition-all duration-300 ease-in-out
+      content: url('/wp-content/themes/stricker/assets/svg/after-arrow.svg')
   .wpml-ls-statics-shortcode_actions
     @apply border-none p-0
     ul
@@ -122,6 +125,21 @@
           @apply text-dark-blue
   .menu-bg
     clip-path: circle(300vw at 4% 5%)
+
+
+@keyframes shopbtn-text-slide
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(-100%)
+
+.shop-btn-slider
+  .text-slide
+    display: inline-block
+    animation: 35s shopbtn-text-slide infinite linear
+  &:hover
+    .text-slide
+       animation-play-state: paused
 
 @media (max-width: 640px)
   #header-main

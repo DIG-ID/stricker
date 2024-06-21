@@ -1,14 +1,14 @@
 <section class="section-hero bg-dark-blue pt-80 pb-20 xl:pt-[154px] xl:pb-28">
-	<div class="section__arrow-down st-grid relative items-center">
+	<div class="section__arrow-down st-grid xl:relative items-center">
 		<div class="col-span-2 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2 z-10 xl:absolute" style="user-select: none;">
 			<h1>
-				<span class="st-subtitle-bi-caps text-light-blue"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></span>
-				<span class="st-title-big st-text-outline-big text-transparent"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></span>
-				<span class="st-title-big st-text-outline-big text-blue"><?php esc_html_e( 'STRICKER', 'stricker' ); ?></span>
+				<span class="st-subtitle-bi-caps text-light-blue block"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></span>
+				<span class="st-title-big st-text-outline-big text-transparent block"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></span>
+				<span class="st-title-big st-text-outline-big text-blue block"><?php esc_html_e( 'STRICKER', 'stricker' ); ?></span>
 			</h1>
 			<p class="st-body-dates text-light-blue mt-20 max-w-64 md:max-w-80 xl:max-w-none"><?php the_field( 'hero_intro_text' ) ?></p>
 		</div>
-		<div class="hidden xl:block xl:col-span-9 xl:col-start-4 bg-black h-[810px] top-0 right-0 w-full z-0">
+		<div class="xl:block xl:col-span-9 xl:col-start-4 bg-black h-[810px] top-0 left-0 right-0 bottom-0 w-full z-0 absolute xl:relative">
 		<?php
 		$hero_video = get_field('hero_video');
 		if( $hero_video ): ?>
@@ -20,7 +20,7 @@
 		?>
 		</div>
 	</div>
-	<div class="info-box fixed w-full bottom-5 st-grid z-30 -mt-9">
+	<div class="info-box fixed w-full bottom-10 st-grid z-30 -mt-9">
 		<div class="hidden xl:flex justify-center col-span-4 col-start-5">
 			<div class="bg-blue rounded-[40.5px] w-[500px] h-[75px] grid grid-cols-7">
 				<div class="col-span-1 flex flex-col justify-center items-center">
@@ -126,7 +126,7 @@
                     $start_date_display = date('d/m/Y', strtotime($selected_tournament_start_date));
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
-                    <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php echo $start_date_display; ?></p>
+                    <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php /*echo $start_date_display;*/esc_html_e( 'Next Trounament', 'stricker' );?></p>
                     <p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php echo $selected_tournament_title; ?></p>
                     <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>

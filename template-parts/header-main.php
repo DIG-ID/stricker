@@ -1,4 +1,7 @@
 <header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
+	<a target="_bland" href="https://shop.dominicstricker.ch/" class="shop-btn-slider bg-blue font-transducer text-base text-dark-blue py-1 italic font-[545] uppercase overflow-hidden block w-full whitespace-nowrap xl:hidden">
+		<span class="text-slide"><span>Serve Up Style: Shop my Latest Merchandise Today!</span> <span class="mx-10 hover:text-white transition-all duration-300 ease-in-out">> Enter shop <</span></span>
+	</a>
 	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'stricker' ); ?>">
 		<div class="menu-bg"></div>
 		<div class="grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-10">
@@ -31,7 +34,7 @@
 				array(
 					'theme_location'  => 'main-menu',
 					'menu_id'         => 'main-menu',
-					'container_class' => '',
+					'container_class' => 'main-menu-container pt-20 md:pt-0',
 					'menu_class'      => 'main-menu-top-level',
 					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					'fallback_cb'     => '__return_false',
@@ -41,4 +44,5 @@
 			?>
 		</div>
 	</nav>
+
 </header>
