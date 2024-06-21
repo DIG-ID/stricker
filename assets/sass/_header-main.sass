@@ -21,7 +21,7 @@
       @apply text-blue text-[41px] font-transducerCondensed uppercase font-[340] leading-none transition-all duration-500 ease-out hidden invisible md:block md:visible
   .site-branding
     .ds-logo-icon
-      @apply w-full max-w-[65px] md:max-w-[84px] xl:max-w-[88px]
+      @apply w-full max-w-[56px] md:max-w-[84px] xl:max-w-[88px]
       path
         @apply transition-all duration-300 ease-in-out
   .wpml-ls-statics-shortcode_actions
@@ -155,13 +155,16 @@
             @apply top-4 left-0
           &:nth-child(3)
             @apply top-7 left-0
-
     .wpml-ls-statics-shortcode_actions
       @apply border-none p-0
       ul
+        .wpml-ls-first-item
+          @apply border-r-[2px] border-blue
         .wpml-ls-item
           .wpml-ls-link
-            @apply font-transducerCondensed font-[350] text-[40px] text-blue leading-[30px] uppercase transition-all duration-500 ease-out flex
+            @apply font-transducerCondensed font-[340] text-[20px] text-blue leading-[normal] uppercase transition-all duration-500 ease-out flex py-0
+            .wpml-ls-native
+              line-height: 1
     .menu-bg
       clip-path: circle(0% at 4% 4%)
       @apply fixed w-full h-svh
