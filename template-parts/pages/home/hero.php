@@ -2,7 +2,7 @@
 	<div class="section__arrow-down st-grid xl:relative items-center">
 		<div class="col-span-2 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2 z-10 xl:absolute" style="user-select: none;">
 			<h1>
-				<span class="st-subtitle-bi-caps text-light-blue block"><?php esc_html_e( 'welcome to the official site of', 'stricker' ); ?></span>
+				<span class="st-subtitle-bi-caps text-light-blue block"><?php esc_html_e( 'Willkommen auf der offiziellen Webseite von', 'stricker' ); ?></span>
 				<span class="st-title-big st-text-outline-big text-transparent block"><?php esc_html_e( 'DOMINIC', 'stricker' ); ?></span>
 				<span class="st-title-big st-text-outline-big text-blue block"><?php esc_html_e( 'STRICKER', 'stricker' ); ?></span>
 			</h1>

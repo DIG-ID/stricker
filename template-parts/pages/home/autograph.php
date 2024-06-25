@@ -15,7 +15,7 @@
                 </div>
             </a>
             <div class="st-title-big st-title-big--autograph st-text-outline-big text-transparent w-full text-center absolute -rotate-[10.033deg] bottom-1/3">
-                <span style="user-select:none;"><?php esc_html_e( 'Autograph Card', 'stricker' ) ?></span>
+                <span style="user-select:none;"><?php esc_html_e( 'Autogrammkarte', 'stricker' ) ?></span>
             </div>
             
         </div>
@@ -23,8 +23,8 @@
     </div>
     <div class="st-grid">
         <div class="col-span-2 md:col-span-8 xl:col-span-12 flex flex-col items-center md:mt-12">
-            <p class="st-subtitle-big text-light-blue uppercase"><?php esc_html_e( 'Get your', 'stricker' ) ?></p>
-            <p class="st-title text-blue"><?php esc_html_e( 'Autograph card', 'stricker' ) ?></p>
+            <p class="st-subtitle-big text-light-blue uppercase"><?php esc_html_e( 'Erhalte deine', 'stricker' ) ?></p>
+            <p class="st-title text-blue"><?php esc_html_e( 'Autogrammkarte', 'stricker' ) ?></p>
         </div>
     </div>
 </section>

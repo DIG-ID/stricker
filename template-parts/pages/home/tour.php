@@ -18,21 +18,20 @@
         <div class="col-span-2 md:col-span-4 xl:col-span-9 col-start-1 md:col-start-2 xl:col-start-2 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-9">
             <div class="col-span-6 xl:col-span-1 pt-14 items-center flex-col flex xl:block">
                 <img class="xl:float-left w-[67px] pb-7 xl:pb-0" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/cup.svg" alt="tournament cup" title="tournament cup">
-                <p class="xl:float-left st-subtitle-big-regular !text-[28px] md:!text-[45px] text-blue xl:transform xl:-rotate-90 2xl:ml-3 pb-10 md:pb-24 xl:pb-0"><?php esc_html_e( 'Tournaments', 'stricker' ) ?></p>
+                <p class="xl:float-left st-subtitle-big-regular !text-[28px] md:!text-[45px] text-blue xl:transform xl:-rotate-90 xl:ml-8 2xl:ml-12 pb-10 md:pb-24 xl:pb-0"><?php esc_html_e( 'Turniere', 'stricker' ) ?></p>
             </div>
             <div class="col-span-6 xl:col-span-3">
-                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Last', 'stricker' ) ?></p>
+                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Letztes', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
                 <?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
                     'post_type'      => 'tournament',
-                    'posts_per_page' => -1, // Retrieve all posts
+                    'posts_per_page' => -1,
                 ));
 
                 $tournament_found = false;
 
-                // Initialize variables to store details of the tournament post with end date before today
                 $selected_tournament_title = '';
                 $selected_tournament_start_date = '';
                 $selected_tournament_end_date = '';
@@ -87,7 +86,7 @@
 
             </div>
             <div class="col-span-6 xl:col-span-2">
-                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-[10px] border-blue pb-0 md:pb-[16px] text-right xl:text-left"><?php esc_html_e( 'Current', 'stricker' ) ?></p>
+                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-[10px] border-blue pb-0 md:pb-[16px] text-right xl:text-left"><?php esc_html_e( 'Aktuelles', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-[42px] xl:border-b-2 border-blue">
                 <?php
                 $current_date = date('Ymd');
@@ -148,7 +147,7 @@
                 </div>
             </div>
             <div class="col-span-6 xl:col-span-2">
-                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Next', 'stricker' ) ?></p>
+                <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Nächstes', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
                 <?php
                 $current_date = date('Ymd');
