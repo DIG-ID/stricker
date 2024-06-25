@@ -126,7 +126,7 @@
         <div class="st-container st-container-grid">
             <div class="col-span-2 md:col-span-4 xl:col-span-10 mb-48 mt-20">
                 <span class="st-subtitle-i text-light-blue"><?php esc_html_e( 'Die vollständige Liste der Partner steht zum', 'stricker' )  ?></span>
-                <a href="#" class="st-subtitle-i text-blue underline"><?php esc_html_e( 'Download bereit', 'stricker' ) ?></a>
+                <a href="<?php the_field( 'partners_pdf_link' ); ?>" target="_blank" class="st-subtitle-i text-blue underline"><?php esc_html_e( 'Download bereit', 'stricker' ) ?></a>
             </div>
         </div>
     </div>

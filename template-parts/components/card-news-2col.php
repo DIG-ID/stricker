@@ -17,7 +17,7 @@
         <h2 class="st-subtitle-i text-dark-blue px-8"><?php the_title(); ?></h2>
         
         <div class="col-span-4 px-8 py-10">
-            <a href="<?php the_permalink(); ?>" class="btn-arrow-caps text-blue"><?php esc_html_e( 'Read More', 'stricker' ) ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn-arrow-caps text-blue"><?php esc_html_e( 'Mehr erfahren', 'stricker' ) ?></a>
         </div>
     </div>
 </article>
