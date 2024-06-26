@@ -51,6 +51,7 @@
                         // Check if the end date of the tournament is before today's date
                         if ($end_date_Ymd && $end_date_Ymd < $current_date) :
                             // Store details of the tournament post
+                            $selected_tournament_link = get_field('tournament_link');
                             $selected_tournament_title = get_the_title();
                             $selected_tournament_start_date = $start_date;
                             $selected_tournament_end_date = $end_date;
@@ -72,7 +73,7 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></p>
+                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></a>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with end date before today is found, display custom content -->
@@ -103,6 +104,7 @@
                     while ($tournament_query->have_posts()) :
                         $tournament_query->the_post();
 
+                        $selected_tournament_link = get_field('tournament_link');
                         // Get start_date and end_date using ACF
                         $start_date = get_field('start_date');
                         $end_date = get_field('end_date');
@@ -118,7 +120,7 @@
                             $end_date_display = date('d/m/Y', strtotime($end_date));
                             ?>
                             <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                            <p class="st-subtitle-caps text-light-blue text-nowrap"><?php the_title(); ?></p>
+                            <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php the_title(); ?></a>
                             <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                             <?php
                             // If a matching tournament is found, set flag to true and break out of the loop
@@ -180,6 +182,7 @@
                         if ($start_date_Ymd && $start_date_Ymd > $current_date) {
                             // Store details of the tournament post if it's the first post found after today's date
                             if (!$tournament_found || $start_date_Ymd < $selected_tournament_start_date) {
+                                $selected_tournament_link = get_field('tournament_link');
                                 $selected_tournament_title = get_the_title();
                                 $selected_tournament_start_date = $start_date_Ymd;
                                 $selected_tournament_end_date = $end_date;
@@ -197,7 +200,7 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></p>
+                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></a>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with start date after today is found, display custom content -->
