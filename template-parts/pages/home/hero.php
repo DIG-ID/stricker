@@ -72,7 +72,7 @@
 					if (!$tournament_found) :
 						?>
 						<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-						<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue underline text-nowrap single-line"><?php esc_html_e('No Current Tournament', 'stricker'); ?></p>
+						<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue underline text-nowrap single-line"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></p>
 						<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('-', 'stricker'); ?></p>
 					<?php endif; ?>
 					
@@ -126,13 +126,13 @@
                     $start_date_display = date('d/m/Y', strtotime($selected_tournament_start_date));
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
-                    <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php /*echo $start_date_display;*/esc_html_e( 'Next Trounament', 'stricker' );?></p>
+                    <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php /*echo $start_date_display;*/esc_html_e( 'Nächstes', 'stricker' );?></p>
                     <p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php echo $selected_tournament_title; ?></p>
                     <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with start date after today is found, display custom content -->
                     <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php esc_html_e('No Upcoming Tournament', 'stricker'); ?></p>
+                    <p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php esc_html_e('Kein bevorstehendes Turnier', 'stricker'); ?></p>
                     <p class="font-transducer font-normal text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 					

@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-end items-center gap-x-8">
-				<a href="#" class="btn-arrow-caps text-blue !hidden !invisible xl:!block xl:!visible xl:mr-8"><?php esc_html_e( 'zum Shop', 'stricker' ); ?></a>
+				<a href="https://shop.dominicstricker.ch/" class="btn-arrow-caps text-blue !hidden !invisible xl:!block xl:!visible xl:mr-8"><?php esc_html_e( 'zum Shop', 'stricker' ); ?></a>
 				<?php do_action( 'wpml_add_language_selector' ); ?>
 			</div>
 		</div>
