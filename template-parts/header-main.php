@@ -1,6 +1,6 @@
 <header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
 	<a target="_blank" href="https://shop.dominicstricker.ch/" class="shop-btn-slider bg-blue font-transducer text-base text-dark-blue py-1 italic font-[545] uppercase overflow-hidden block w-full whitespace-nowrap xl:hidden">
-		<span class="text-slide"><span><?php esc_html_e( 'Serve Up Style: Shop my Latest Merchandise Today!', 'stricker' ); ?></span> <span class="mx-10 hover:text-white transition-all duration-300 ease-in-out"><?php esc_html_e( '> Enter shop <', 'stricker' ); ?></span></span>
+		<span class="text-slide"><span><?php esc_html_e( 'Serve Up Style: Shop my Latest Merchandise Today!', 'stricker' ); ?></span> <span class="mx-10 hover:text-white transition-all duration-300 ease-in-out"><?php esc_html_e( '> zum Shop <', 'stricker' ); ?></span></span>
 	</a>
 	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'stricker' ); ?>">
 		<div class="menu-bg"></div>
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-end items-center gap-x-8">
-				<a href="#" class="btn-arrow-caps text-blue !hidden !invisible xl:!block xl:!visible xl:mr-8"><?php esc_html_e( 'Enter Shop', 'stricker' ); ?></a>
+				<a href="#" class="btn-arrow-caps text-blue !hidden !invisible xl:!block xl:!visible xl:mr-8"><?php esc_html_e( 'zum Shop', 'stricker' ); ?></a>
 				<?php do_action( 'wpml_add_language_selector' ); ?>
 			</div>
 		</div>
