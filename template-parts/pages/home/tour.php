@@ -22,7 +22,7 @@
             </div>
             <div class="col-span-6 xl:col-span-3">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Letztes', 'stricker' ) ?></p>
-                <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
+                <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue xl:max-h-[196px]">
                 <?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
@@ -73,12 +73,12 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></a>
+                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap truncate-text"><?php echo $selected_tournament_title; ?></a>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with end date before today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein vorheriges Turnier', 'stricker'); ?></p>
+                    <a class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein vorheriges Turnier', 'stricker'); ?></a>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 
@@ -88,7 +88,7 @@
             </div>
             <div class="col-span-6 xl:col-span-2">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-[10px] border-blue pb-0 md:pb-[16px] text-right xl:text-left"><?php esc_html_e( 'Aktuelles', 'stricker' ) ?></p>
-                <div class="pt-5 pb-8 md:py-[42px] xl:border-b-2 border-blue">
+                <div class="pt-5 pb-8 md:py-[42px] xl:border-b-2 border-blue xl:max-h-[192px]">
                 <?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
@@ -120,7 +120,7 @@
                             $end_date_display = date('d/m/Y', strtotime($end_date));
                             ?>
                             <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                            <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php the_title(); ?></a>
+                            <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap truncate-text"><?php the_title(); ?></a>
                             <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                             <?php
                             // If a matching tournament is found, set flag to true and break out of the loop
@@ -135,7 +135,7 @@
                 if (!$tournament_found) :
                     ?>
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></p>
+                    <a class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></a>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
                 </div>
@@ -144,13 +144,13 @@
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5"><?php esc_html_e( '&nbsp;', 'stricker' ) ?></p>
                 <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
                     <p class="st-body-dates text-blue invisible"><?php esc_html_e( '-', 'stricker' ); ?></p>
-                    <p class="st-subtitle-caps text-light-blue invisible"><?php esc_html_e( '-', 'stricker' ); ?></p>
+                    <a class="st-subtitle-caps text-light-blue invisible"><?php esc_html_e( '-', 'stricker' ); ?></a>
                     <p class="st-subtitle text-blue invisible"><?php esc_html_e( '-', 'stricker' ); ?></p>
                 </div>
             </div>
             <div class="col-span-6 xl:col-span-2">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5 text-right xl:text-left"><?php esc_html_e( 'Nächstes', 'stricker' ) ?></p>
-                <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue">
+                <div class="pt-5 pb-8 md:py-11 xl:border-b-2 border-blue xl:max-h-[196px]">
                 <?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
@@ -200,12 +200,12 @@
                     $end_date_display = date('d/m/Y', strtotime($selected_tournament_end_date));
                     ?>
                     <p class="st-body-dates text-blue"><?php echo $start_date_display; ?></p>
-                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap"><?php echo $selected_tournament_title; ?></a>
+                    <a href="<?php echo $selected_tournament_link; ?>" target="_blank" class="st-subtitle-caps text-light-blue text-nowrap truncate-text"><?php echo $selected_tournament_title; ?></a>
                     <p class="st-subtitle text-blue"><?php echo $end_date_display; ?></p>
                 <?php else : ?>
                     <!-- If no tournament post with start date after today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein bevorstehendes Turnier', 'stricker'); ?></p>
+                    <a class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein bevorstehendes Turnier', 'stricker'); ?></a>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 
