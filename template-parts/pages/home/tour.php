@@ -77,7 +77,7 @@
                 <?php else : ?>
                     <!-- If no tournament post with end date before today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No previous tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein vorheriges Turnier', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 
@@ -133,7 +133,7 @@
                 if (!$tournament_found) :
                     ?>
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No Current Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
                 </div>
@@ -202,7 +202,7 @@
                 <?php else : ?>
                     <!-- If no tournament post with start date after today is found, display custom content -->
                     <p class="st-body-dates text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
-                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('No Upcoming Tournament', 'stricker'); ?></p>
+                    <p class="st-subtitle-caps text-light-blue text-nowrap"><?php esc_html_e('Kein bevorstehendes Turnier', 'stricker'); ?></p>
                     <p class="st-subtitle text-blue"><?php esc_html_e('-', 'stricker'); ?></p>
                 <?php endif; ?>
 
