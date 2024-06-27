@@ -6,44 +6,43 @@
 				<hr class="w-full border-2 border-blue mt-5 mb-24">
 			</div>
 		</div>
-	</div>
-	<div class="st-grid">
-		<div class="col-span-10 col-start-2">
-			<div class="filters-wrapper flex gap-x-5 mb-24">
-				<?php
-				$media_taxonomies = array( 'media-year', 'tournament', 'surface' );
-				foreach ( $media_taxonomies as $media_tax ) :
-					$media_tax = get_taxonomy( $media_tax );
-					if ( ! empty( $media_tax ) ) :
-						$media_tax_name = $media_tax->labels->name;
-						$media_tax_slug = $media_tax->rewrite['slug'];
-						$media_terms = get_terms(
-							array(
-								'taxonomy'   => $media_tax_slug,
-								'hide_empty' => true,
-							)
-						);
-						?>
-						<div class="filters-select-wrapper">
-							<select name="<?php echo esc_attr( $media_tax_slug ); ?>" id="<?php echo esc_attr( $media_tax_slug ); ?>" class="filters-select" data-filter-group="<?php echo esc_attr( $media_tax_slug ); ?>">
-								<option value="*"><?php echo esc_html_e( $media_tax_name ); ?></option>
-								<?php
-								foreach ( $media_terms as $media_term ) :
-									echo '<option value=".' . esc_attr( $media_term->slug ) . '">' . esc_html( $media_term->name ) . '</option>';
-								endforeach;
-								?>
-							</select>
-						</div>
-						<?php
-					endif;
-				endforeach;
-				?>
-				<button id="reset-filters"><?php esc_html_e( 'Filter zurücksetzen', 'stricker' ); ?></button>
+		<div class="st-container st-container-grid">
+			<div class="col-span-10">
+				<div class="filters-wrapper flex gap-x-5 mb-11 xl:mb-24 flex-wrap">
+					<?php
+					$media_taxonomies = array( 'media-year', 'tournament', 'surface' );
+					foreach ( $media_taxonomies as $media_tax ) :
+						$media_tax = get_taxonomy( $media_tax );
+						if ( ! empty( $media_tax ) ) :
+							$media_tax_name = $media_tax->labels->name;
+							$media_tax_slug = $media_tax->rewrite['slug'];
+							$media_terms = get_terms(
+								array(
+									'taxonomy'   => $media_tax_slug,
+									'hide_empty' => true,
+								)
+							);
+							?>
+							<div class="filters-select-wrapper">
+								<select name="<?php echo esc_attr( $media_tax_slug ); ?>" id="<?php echo esc_attr( $media_tax_slug ); ?>" class="filters-select" data-filter-group="<?php echo esc_attr( $media_tax_slug ); ?>">
+									<option value="*"><?php echo esc_html_e( $media_tax_name ); ?></option>
+									<?php
+									foreach ( $media_terms as $media_term ) :
+										echo '<option value=".' . esc_attr( $media_term->slug ) . '">' . esc_html( $media_term->name ) . '</option>';
+									endforeach;
+									?>
+								</select>
+							</div>
+							<?php
+						endif;
+					endforeach;
+					?>
+					<button id="reset-filters"><?php esc_html_e( 'Filter zurücksetzen', 'stricker' ); ?></button>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="st-grid">
-		<div class="col-span-10 col-start-2">
+		<div class="st-container st-container-grid">
+			<div class="col-span-10">
 			<?php
 			$gallery = get_field( 'video_gallery' );
 			if ( $gallery ) :
