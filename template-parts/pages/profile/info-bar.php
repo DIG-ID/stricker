@@ -16,9 +16,5 @@
                 <p class="font-transducer text-[14px] leading-[29px] font-[500] text-dark-blue tracking-[0.28px] uppercase"><?php esc_html_e( 'Bevorzugter Belag', 'stricker' ); ?></p>
                 <p class="font-transducerCondensed text-[45px] leading-normal uppercase font-normal text-light-blue"><?php the_field( 'info_bar_surface' ); ?></p>
             </div>
-            <div class="info">
-                <p class="font-transducer text-[14px] leading-[29px] font-[500] text-dark-blue tracking-[0.28px] uppercase"><?php esc_html_e( 'Spielbeginn', 'stricker' ); ?></p>
-                <p class="font-transducerCondensed text-[45px] leading-normal uppercase font-normal text-light-blue"><?php the_field( 'info_bar_age' ); ?></p>
-            </div>
     </div>
 </section>

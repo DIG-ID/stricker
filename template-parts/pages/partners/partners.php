@@ -84,7 +84,7 @@
 
         <div class="st-container st-container-grid mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Lieferanten', 'stricker' ) ?></p>
+                <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Ausrüster', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
