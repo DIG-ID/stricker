@@ -27,7 +27,7 @@
 							?>
 							<div class="filters-select-wrapper">
 								<select name="<?php echo esc_attr( $media_tax_slug ); ?>" id="<?php echo esc_attr( $media_tax_slug ); ?>" class="filters-select" data-filter-group="<?php echo esc_attr( $media_tax_slug ); ?>">
-									<option value="*"><?php echo esc_html( $media_tax_name ); ?></option>
+									<option value="*"><?php echo esc_html_e( $media_tax_name ); ?></option>
 									<?php
 									foreach ( $media_terms as $media_term ) :
 										echo '<option value=".' . esc_attr( $media_term->slug ) . '">' . esc_html( $media_term->name ) . '</option>';
