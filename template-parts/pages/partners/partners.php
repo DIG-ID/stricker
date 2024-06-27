@@ -25,7 +25,7 @@
                         $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                         $partner_url = get_field('website_url');
 
-                        echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
+                        echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
                         if ($partner_logo && $partner_url) :
                             echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                         else :
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="st-container st-container-grid mt-48">
+        <div class="st-container st-container-grid mt-16 xl:mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
                 <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
@@ -66,7 +66,7 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                     $partner_url = get_field('website_url');
 
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
+                    echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
                     if ($partner_logo && $partner_url) :
                         echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                     else :
@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div class="st-container st-container-grid mt-48">
+        <div class="st-container st-container-grid mt-16 xl:mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
                 <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Ausrüster', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
@@ -107,7 +107,7 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                     $partner_url = get_field('website_url');
 
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-32">';
+                    echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
                     if ($partner_logo && $partner_url) :
                         echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                     else :
@@ -124,7 +124,7 @@
         </div>
 
         <div class="st-container st-container-grid">
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 mb-48 mt-20">
+            <div class="col-span-2 md:col-span-4 xl:col-span-10 mb-0 md:mb-14 xl:mb-48 mt-5 md:mt-14 xl:mt-20">
                 <span class="st-subtitle-i text-light-blue"><?php esc_html_e( 'Die vollständige Liste der Partner steht zum', 'stricker' )  ?></span>
                 <a href="<?php the_field( 'partners_pdf_link' ); ?>" target="_blank" class="st-subtitle-i text-blue underline"><?php esc_html_e( 'Download bereit', 'stricker' ) ?></a>
             </div>
