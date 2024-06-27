@@ -1,5 +1,5 @@
 <section class="section-partners bg-dark-blue -mt-[1px]">
-	<div class="st-grid">
+	<div class="grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 xl:gap-8 px-6 md:px-0">
         <?php
         $news_args = array(
             'post_type'      => 'news',
@@ -13,7 +13,7 @@
         if ( $newse_query->have_posts() ) : 
             $first_post = true; // Initialize a flag for the first post
             ?>
-            <div class="st-container st-container-grid">
+            <div class="st-container grid grid-cols-2 md:grid-cols-4 xl:grid-cols-10 gap-6 xl:gap-8 px-6 md:px-0">
                 <?php
                 while ( $newse_query->have_posts() ) :
                     $newse_query->the_post();
