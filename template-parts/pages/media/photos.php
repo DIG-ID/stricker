@@ -71,7 +71,7 @@
 							$image_class_string = implode( ' ', $image_term_classes );
 							// Output the image HTML.
 							?>
-							<div class="w-1/5 element-item <?php echo esc_attr( $image_class_string ); ?>" data-category="<?php echo esc_attr( $image_class_string ); ?>">
+							<div class=" w-1/2 lg:w-1/5 element-item <?php echo esc_attr( $image_class_string ); ?>" data-category="<?php echo esc_attr( $image_class_string ); ?>">
 								<a href="<?php echo esc_url( $g_image['url'] ); ?>" data-fancybox="gallery" data-src="<?php echo esc_url( $g_image['sizes']['media-full'] ); ?>" class="block">
 									<img src="<?php echo esc_url( $g_image['sizes']['media-thumbnail'] ); ?>" alt="<?php echo esc_attr( $g_image['alt'] ); ?>" class="max-w-full w-full object-cover "/>
 								</a>
