@@ -1,4 +1,4 @@
-<section class="section-hero bg-dark-blue pt-80 pb-20 xl:pt-[154px] xl:pb-28">
+<section class="section-hero bg-dark-blue pt-80 pb-20 xl:pt-[154px] xl:pb-28 relative">
 	<div class="section__arrow-down st-grid xl:relative items-center">
 		<div class="col-span-2 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2 z-10 xl:absolute" style="user-select: none;">
 			<h1>
