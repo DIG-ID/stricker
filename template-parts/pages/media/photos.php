@@ -30,7 +30,7 @@
 									<option value="*"><?php echo esc_html_e( $media_tax_name ); ?></option>
 									<?php
 									foreach ( $media_terms as $media_term ) :
-										echo '<option value=".' . esc_attr( $media_term->slug ) . '">' . esc_html_e( $media_term->name ) . '</option>';
+										echo '<option value=".' . esc_attr( $media_term->slug ) . '">' . esc_html( $media_term->name ) . '</option>';
 									endforeach;
 									?>
 								</select>
