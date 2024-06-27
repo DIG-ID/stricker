@@ -8,7 +8,7 @@
 			</h1>
 			<p class="st-body-dates text-light-blue mt-20 max-w-64 md:max-w-80 xl:max-w-none"><?php the_field( 'hero_intro_text' ) ?></p>
 		</div>
-		<div class="xl:block xl:col-span-9 xl:col-start-4 bg-black h-[810px] top-0 left-0 right-0 bottom-0 w-full z-0 absolute xl:relative">
+		<div class="xl:block xl:col-span-9 xl:col-start-4 bg-black h-[1000px] xl:h-[810px] top-0 left-0 right-0 bottom-0 w-full z-0 absolute xl:relative">
 		<?php
 		$hero_video = get_field('hero_video');
 		if( $hero_video ): ?>
