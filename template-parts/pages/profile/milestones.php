@@ -13,11 +13,11 @@
             </div>
 
             <div class="col-span-1 md:col-span-3 xl:col-span-5 col-start-2 md:col-start-4 xl:col-start-8 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-5 gap-6 xl:gap-8 px-6 md:px-0 bg-[#DFF4F7] py-28 relative">
-                <div class="col-span-2 md:col-span-3 xl:col-span-3 z-10 md:-ml-32">
+                <div class="col-span-2 md:col-span-3 xl:col-span-3 z-10 md:-ml-8">
                 <?php 
                 $image_intro = get_field( 'milestones_content_image_1' );
                 if ( $image_intro ) : ?>
-                    <?php echo wp_get_attachment_image( $image_intro, 'full', false, array( 'class' => 'w-full object-cover' ) ); ?>
+                    <?php echo wp_get_attachment_image( $image_intro, 'full', false, array( 'class' => 'w-full object-cover md:-ml-24' ) ); ?>
                 <?php endif;
                 ?>
                 </div>
