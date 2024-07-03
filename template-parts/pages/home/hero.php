@@ -21,12 +21,12 @@
 		</div>
 	</div>
 	<div class="info-box fixed w-full bottom-10 st-grid z-30 -mt-9">
-		<div class="hidden xl:flex justify-center col-span-4 col-start-5">
-			<div class="bg-blue rounded-[40.5px] w-[500px] h-[75px] grid grid-cols-7">
+		<div class="hidden xl:flex justify-center col-span-6 col-start-4">
+			<div class="bg-blue rounded-[40.5px] w-[750px] h-[75px] grid grid-cols-9">
 				<div class="col-span-1 flex flex-col justify-center items-center">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/info.svg" alt="info" title="info" />
 				</div>
-				<div class="col-span-2 flex flex-col justify-center">
+				<div class="col-span-3 flex flex-col justify-center">
 					<?php
 					$current_date = date('Ymd');
 					$tournament_query = new WP_Query(array(
@@ -78,7 +78,7 @@
 					
 				</div>
 				<div class="col-span-1"></div>
-				<div class="col-span-2 flex flex-col justify-center">
+				<div class="col-span-3 flex flex-col justify-center">
 				<?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
