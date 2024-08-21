@@ -47,7 +47,7 @@
                 <div class="border-t-2 border-blue xl:col-span-2 pt-5 flex items-start text-dark-blue">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/swiss-flag.svg" title="Flag" alt="flag" class="w-[77px]">
                     <div class="pl-2">
-                        <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Wohnort,', 'stricker' ) ?></span><br>
+                        <span class="st-subtitle-caps md:!leading-6"><?php esc_html_e( 'Wohnort:', 'stricker' ) ?></span><br>
                         <span class="st-subtitle-b-caps md:!leading-6"><?php esc_html_e( 'Grosshöchstetten', 'stricker' ) ?></span>
                     </div>
                 </div>
