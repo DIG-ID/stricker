@@ -55,6 +55,27 @@
             background-repeat: no-repeat
             @apply absolute block -left-8 top-0 xl:top-60 w-4 h-[303px]
 
+.tournament__side-title
+    padding-bottom: 2.5rem
+
+@media (min-width: 768px)
+    .tournament__side-title
+        padding-bottom: 6rem
+
+@media (min-width: 1280px)
+    .tournament__side-title:lang(de)
+        margin-left: 1.5rem
+        padding-bottom: 0
+    .tournament__side-title:lang(en)
+        margin-left: -0.5rem
+        padding-bottom: 0
+
+@media (min-width: 1536px)
+    .tournament__side-title:lang(de)
+        margin-left: 3rem
+    .tournament__side-title:lang(en)
+        margin-left: 1rem
+
 
 @media (max-width: 640px)
     .section-profile

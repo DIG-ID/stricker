@@ -1,4 +1,4 @@
-<section class="section-autograph bg-dark-blue pt-0 pb-20 md:py-32 xl:py-56 -my-1">
+<section class="section-autograph bg-dark-blue pt-0 pb-24 md:pb-20 md:py-32 xl:py-56 -my-1">
     <div class="st-grid relative">
         <div class="container__autograph col-span-2 md:col-span-6 xl:col-span-8 col-start-1 md:col-start-1 xl:col-start-3 flex justify-center">
             <a href="<?php the_field( 'autograph_link' ); ?>">
