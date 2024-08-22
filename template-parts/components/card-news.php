@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-1 md:col-span-2 xl:col-span-3 mb-24 bg-light-blue' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-1 md:col-span-2 xl:col-span-3 mb-6 md:mb-9 xl:mb-24 bg-light-blue' ); ?>>
     <div class="border-t-[7px] border-blue">
         <?php if (has_post_thumbnail()) : 
             $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'news-thumb');
@@ -17,7 +17,7 @@
         <h2 class="st-subtitle-i text-dark-blue px-3 md:px-8"><?php the_title(); ?></h2>
         
         <div class="px-3 md:px-8 py-3 md:py-10">
-            <a href="<?php the_permalink(); ?>" class="btn-arrow-caps text-blue"><?php esc_html_e( 'Mehr erfahren', 'stricker' ) ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn-arrow-caps !normal-case text-blue"><?php esc_html_e( 'Mehr erfahren', 'stricker' ) ?></a>
         </div>
     </div>
 </article>

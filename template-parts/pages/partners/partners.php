@@ -5,7 +5,7 @@
                 <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Hauptpartner', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
+            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
                 <?php
                 $partner_query = new WP_Query(array(
                     'post_type' => 'partner',
@@ -25,7 +25,7 @@
                         $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                         $partner_url = get_field('website_url');
 
-                        echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
+                        echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
                         if ($partner_logo && $partner_url) :
                             echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                         else :
@@ -46,7 +46,7 @@
                 <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
+            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
@@ -66,7 +66,7 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                     $partner_url = get_field('website_url');
 
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
+                    echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
                     if ($partner_logo && $partner_url) :
                         echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                     else :
@@ -87,7 +87,7 @@
                 <p class="st-subtitle-i text-light-blue w-full"><?php esc_html_e( 'Ausrüster', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex" style="flex-flow: wrap;">
+            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
@@ -107,7 +107,7 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), ''); 
                     $partner_url = get_field('website_url');
 
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-32 w-full md:w-1/2 xl:w-full">';
+                    echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
                     if ($partner_logo && $partner_url) :
                         echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                     else :

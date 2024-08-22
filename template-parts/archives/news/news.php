@@ -12,7 +12,7 @@
         if ( $newse_query->have_posts() ) : 
             $first_post = true; // Initialize a flag for the first post
             ?>
-            <div class="col-span-2 md:col-span-6 xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-10 gap-6 xl:gap-8 px-6 md:px-0">
+            <div class="col-span-2 md:col-span-6 xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-10 gap-x-6 xl:gap-8 px-6 md:px-0">
                 <?php
                 while ( $newse_query->have_posts() ) :
                     $newse_query->the_post();
