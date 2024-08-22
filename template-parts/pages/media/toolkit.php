@@ -43,7 +43,7 @@
 				$guidelines_file = get_field( 'brand_toolkit_brand_guidelines_file' );
 				if ( $guidelines_file ) :
 					?>
-					<a href="<?php echo esc_url( $guidelines_file ); ?>" class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
+					<a href="<?php echo esc_url( $guidelines_file ); ?>" target="_blank"class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
 						<div class="col-span-2">
 							<?php
 							$guidelines_image = get_field( 'brand_toolkit_brand_guidelines_image' );
