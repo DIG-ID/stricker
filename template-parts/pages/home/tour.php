@@ -5,7 +5,7 @@
 <div class="swiper swiper-tour">
     <div class="swiper-wrapper gap-6 xl:gap-8 px-0">
         <?php for ($i = 0; $i < 12; $i++) : ?>
-            <div class="swiper-slide flex flex-row justify-between min-w-[140px] sm:min-w-[100px] md:min-w-[265px]">
+            <div class="swiper-slide flex flex-row justify-between min-w-[180px] sm:min-w-[100px] md:min-w-[265px]">
                 <span class="st-title !font-[418] text-light-blue" style="user-select: none;"><?php esc_html_e( 'On Tour', 'stricker' ) ?></span><span class="st-title text-light-blue px-4 md:px-0">•</span>
             </div>
         <?php endfor; ?>
