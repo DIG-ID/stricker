@@ -12,7 +12,7 @@
 				$logo_package_file = get_field( 'brand_toolkit_logotype_package_file' );
 				if ( $logo_package_file ) :
 					?>
-					<a href="<?php echo esc_url( $logo_package_file['url'] ); ?>" class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
+					<a href="<?php echo esc_url( $logo_package_file ); ?>" class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
 						<div class="col-span-2">
 							<?php
 							$logo_package_image = get_field( 'brand_toolkit_logotype_package_image' );
@@ -43,7 +43,7 @@
 				$guidelines_file = get_field( 'brand_toolkit_brand_guidelines_file' );
 				if ( $guidelines_file ) :
 					?>
-					<a href="<?php echo esc_url( $guidelines_file['url'] ); ?>" class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
+					<a href="<?php echo esc_url( $guidelines_file ); ?>" class="brand-toolkit-card grid grid-cols-2 md:grid-cols-5 border-t-[7px] border-t-transparent transition-all duration-300 ease-in-out hover:border-t-blue mb-8 h-full">
 						<div class="col-span-2">
 							<?php
 							$guidelines_image = get_field( 'brand_toolkit_brand_guidelines_image' );
