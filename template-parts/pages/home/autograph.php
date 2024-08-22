@@ -36,13 +36,13 @@
         ?>
         <div class="flex flex-col items-center justify-center text-center">
             <h2 class="st-title text-blue !text-4xl mb-6">Autograph card</h2>
-            <div class="flex">
-                <p class="st-body mb-6">For a signed autograph card from Dominic, please send a sufficiently pre-stamped C5 envelope to the following address:</p>
-                <p class="st-body text-blue">Fanpost Dominic Stricker <br>
-                Stockhornweg 11 <br>
-                3506 Grosshöchstetten <br>
-                Schweiz</p>
-            </div>
+ 
+            <p class="st-body mb-6">For a signed autograph card from Dominic, please send a sufficiently pre-stamped C5 envelope to the following address:</p>
+            <p class="st-body text-blue">Fanpost Dominic Stricker <br>
+            Stockhornweg 11 <br>
+            3506 Grosshöchstetten <br>
+            Schweiz</p>
+
 
         </div>
         <?php
