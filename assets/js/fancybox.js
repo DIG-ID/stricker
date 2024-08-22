@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			}); 
 		}
 
+		if ( $(".page-template-page-home")[0] ) {
+			Fancybox.bind('[data-fancybox]', {
+				//
+			}); 
+		}
+
 
 	}, false);
 });

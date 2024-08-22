@@ -10,7 +10,7 @@
                         <div class="w-[360px] h-[360px] md:w-[600px] md:h-[600px] xl:w-[770px] xl:h-[770px] bg-cover bg-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded" style="background-image: url('<?php echo esc_url(wp_get_attachment_image_url( $image, 'full' )); ?>'); border-radius: 50%;"></div>
                     <?php endif; ?>
                     <div class="w-full text-center absolute bottom-[12%] z-20">
-                        <button class="btn btn--autograph"></button>
+                        <button data-fancybox data-src="#autograph-dialog-content" class="btn btn--autograph"></button>
                     </div>
                 </div>
             </a>
@@ -29,3 +29,34 @@
     </div>
 </section>
 
+<div id="autograph-dialog-content" style="display:none;" class="w-full max-w-lg bg-page-bg-light">
+    <?php
+    $current_lang = apply_filters( 'wpml_current_language', NULL );
+    if ( 'en' === $current_lang ) :
+        ?>
+        <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="st-title text-blue !text-4xl mb-6">Autograph card</h2>
+            <div class="flex">
+                <p class="st-body mb-6">For a signed autograph card from Dominic, please send a sufficiently pre-stamped C5 envelope to the following address:</p>
+                <p class="st-body text-blue">Fanpost Dominic Stricker <br>
+                Stockhornweg 11 <br>
+                3506 Grosshöchstetten <br>
+                Schweiz</p>
+            </div>
+
+        </div>
+        <?php
+    elseif ( 'de' === $current_lang ) :
+        ?>
+        <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="st-title text-blue !text-4xl mb-6">Autogrammkarte</h2>
+            <p class="st-body mb-6">Für eine signierte Autogrammkarte von Dominic, bitte einen ausreichend vorfrankierten C5 Umschlag an folgende Adresse senden:</p>
+            <p class="st-body text-blue">Fanpost Dominic Stricker <br>
+            Stockhornweg 11 <br>
+            3506 Grosshöchstetten <br>
+            Schweiz</p>
+        </div>
+        <?php
+    endif;
+    ?>
+</div>
