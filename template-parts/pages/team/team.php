@@ -1,4 +1,4 @@
-<section class="section-partners bg-light-blue -mt-[1px]">
+<section class="section-partners bg-light-blue xl:pb-28 -mt-[1px]">
 	<div class="st-grid">
         <div class="st-container grid grid-cols-2 md:grid-cols-4 xl:grid-cols-9">
             <?php
@@ -26,9 +26,9 @@
         <div class="st-container grid grid-cols-2 md:grid-cols-4 xl:grid-cols-9">
             <div <?php post_class( 'card-team col-span-2 md:col-span-8 xl:col-span-12 mb-24' ); ?>>
                 <div class="w-full relative bg-blue">
-                    <div class="flex justify-center items-center py-[70px]">
-                        <img class="md:mr-[85px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/logo-dark.svg" alt="logo" title="logo" />
-                        <h2 class="st-subtitle-big text-dark-blue"><?php the_field( 'message' ); ?></h2>
+                    <div class="flex flex-col xl:flex-row justify-center items-start xl:items-center py-[70px] px-7 2xl:px-0">
+                        <img class="mb-16 xl:mb-0 mr-0 md:mr-[85px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/logo-dark.svg" alt="logo" title="logo" />
+                        <h2 class="st-subtitle-big text-dark-blue max-w-[350px] xl:max-w-none"><?php the_field( 'message' ); ?></h2>
                     </div>
                 </div>
             </div>

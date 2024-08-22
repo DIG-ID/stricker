@@ -6,7 +6,7 @@
             'order'          => 'DESC',
             'orderby'        => 'date',
             'post_status'    => 'publish',
-            'posts_per_page' => -1 // Show all posts
+            'paged'          => ( get_query_var('paged') ) ? get_query_var('paged') : 1 
         );
         $newse_query = new WP_Query( $news_args );
         if ( $newse_query->have_posts() ) : 
