@@ -1,8 +1,8 @@
-<section class="section-photos bg-page-bg-light pb-52">
+<section class="section-videos bg-page-bg-light pb-52">
 	<div class="st-grid">
 		<div class="st-container st-container-grid">
 			<div class="col-span-1 md:col-span-2 xl:col-span-2">
-				<h2 class="st-subtitle-i text-dark-blue w-full"><?php the_field( 'videos_title' ); ?></h2>
+				<h2 class="st-subtitle-i font-[545] text-dark-blue w-full"><?php the_field( 'videos_title' ); ?></h2>
 				<hr class="w-full border-2 border-blue mt-5 mb-24">
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 							);
 							?>
 							<div class="filters-select-wrapper">
-								<select name="<?php echo esc_attr( $media_tax_slug ); ?>" id="<?php echo esc_attr( $media_tax_slug ); ?>" class="filters-select" data-filter-group="<?php echo esc_attr( $media_tax_slug ); ?>">
+								<select name="<?php echo esc_attr( $media_tax_slug ); ?>" id="<?php echo esc_attr( $media_tax_slug ); ?>" class="filters-select filters-select--video" data-filter-group="<?php echo esc_attr( $media_tax_slug ); ?>">
 									<option value="*"><?php echo esc_html_e( $media_tax_name ); ?></option>
 									<?php
 									foreach ( $media_terms as $media_term ) :
@@ -37,7 +37,7 @@
 						endif;
 					endforeach;
 					?>
-					<button id="reset-filters"><?php esc_html_e( 'Filter zurücksetzen', 'stricker' ); ?></button>
+					<button id="reset-filters" class="reset-filters reset-filters--video"><?php esc_html_e( 'Filter zurücksetzen', 'stricker' ); ?></button>
 				</div>
 			</div>
 		</div>
