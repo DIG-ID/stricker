@@ -144,7 +144,7 @@
             </div>
             <div class="col-span-6 xl:col-span-1 only-desktop hidden xl:block">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[4.8px] md:tracking-[10.4px] text-blue uppercase border-b-2 border-blue pb-0 md:pb-5"><?php esc_html_e( '&nbsp;', 'stricker' ) ?></p>
-                <div class="pt-1 md:pt-6 pb-8 md:pb-[3.6rem] xl:border-b-2 border-blue">
+                <div class="pt-1 md:pt-6 pb-8 md:pb-16 xl:border-b-2 border-blue">
                     <p class="st-body-dates text-blue !leading-[29px] md:!leading-[24px] xl:!leading-[29px] invisible"><?php esc_html_e( '-', 'stricker' ); ?></p>
                     <a class="st-subtitle-caps text-light-blue !text-[18px] md:!text-[32px] min-h-[46px] invisible"><?php esc_html_e( '-', 'stricker' ); ?></a>
                     <p class="st-subtitle text-blue !text-[18px] md:!text-[32px] invisible"><?php esc_html_e( '-', 'stricker' ); ?></p>
