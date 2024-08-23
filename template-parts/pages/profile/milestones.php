@@ -1,4 +1,4 @@
-<section class="section-milestones relative bg-[#DFF4F7]">
+<section class="section-milestones relative bg-[#DFF4F7] hidden xl:block">
     <div class="scroll-section relative h-[101vh]">
         <div class="panel w-[150vw] md:w-[150vw] xl:w-[100vw] st-grid !px-0">
             <div class="col-span-1 md:col-span-3 xl:col-span-7 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-7 gap-6 xl:gap-8 px-6 md:px-0 bg-dark-blue">

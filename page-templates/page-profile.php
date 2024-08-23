@@ -11,6 +11,7 @@ if ( have_posts() ) :
 			get_template_part( 'template-parts/pages/profile/intro' );
 			get_template_part( 'template-parts/pages/profile/info', 'bar' );
 			get_template_part( 'template-parts/pages/profile/milestones' );
+			get_template_part( 'template-parts/pages/profile/milestones-mobile' );
 			get_template_part( 'template-parts/pages/profile/links' );
 		do_action( 'after_main_content' );
 	endwhile;
