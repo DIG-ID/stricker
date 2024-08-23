@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				layoutMode: 'fitRows'
 			});
 
-			const videoGrid = new isotope( '.video-grid', {
+			/*const videoGrid = new isotope( '.video-grid', {
 				// options
 				itemSelector: '.element-item',
 				//percentPosition: true,
 				layoutMode: 'fitRows'
-			});
+			});*/
 
 			imagesLoaded(photoGrid.element).on('progress', function() {
 				photoGrid.layout();
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			// init Isotope for videos
 
-
+			/*
 			imagesLoaded(videoGrid.element).on('progress', function() {
 				videoGrid.layout();
 			});
@@ -145,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 						$('#no-items-message').stop().fadeOut(); // Fade out if items present
 				}
 			});
+			*/
 
 		}
 

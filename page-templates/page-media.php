@@ -10,7 +10,7 @@ if ( have_posts() ) :
 		do_action( 'before_main_content' );
 			get_template_part( 'template-parts/pages/media/header' );
 			get_template_part( 'template-parts/pages/media/photos' );
-			get_template_part( 'template-parts/pages/media/videos' );
+			//get_template_part( 'template-parts/pages/media/videos' );
 			get_template_part( 'template-parts/pages/media/toolkit' );
 		do_action( 'after_main_content' );
 	endwhile;
