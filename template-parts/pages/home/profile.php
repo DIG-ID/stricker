@@ -24,9 +24,9 @@
             </div>
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-12 xl:col-start-5 xl:col-end-13 xl:grid xl:grid-cols-8 gap-6 xl:gap-8 row-span-2 md:pt-9">
-            <div class="xl:w-80 flex mb-[40px] md:mb-[75px] xl:mb-0">
-                <div class="st-title-big !not-italic text-blue w-[100px] md:w-[260px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[130px]"><?php the_field( 'profile_singles_ranking' ); ?></span></div>
-                <div class="st-subtitle-bi-caps text-light-blue w-[60px] md:w-[130px] flex justify-end pt-2">Singles<br>Ranking</div>
+            <div class="xl:col-span-3 xl:w-80 flex mb-[40px] md:mb-[75px] xl:mb-0">
+                <div class="st-title-big !not-italic text-blue w-[100px] md:w-[300px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[130px] pr-6"><?php the_field( 'profile_singles_ranking' ); ?></span></div>
+                <div class="st-subtitle-bi-caps text-light-blue w-[60px] md:w-[130px] flex justify-end pt-2 pl-6">Singles<br>Ranking</div>
             </div>
             <div class="xl:w-[260px] xl:col-start-5 flex">
                 <div class="st-title !not-italic text-blue w-[65px] md:w-[170px] xl:w-[140px]"><span class="number-anim inline-block w-full border-r-2 border-light-blue md:pb-7 md:leading-[60px]"><?php the_field( 'profile_doubles_ranking' ); ?></span></div>
