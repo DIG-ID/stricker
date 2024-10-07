@@ -24,14 +24,17 @@
                         $partner_query->the_post();
                         $partner_logo = get_field('logo_edited');
                         $partner_url = get_field('website_url');
-
-                        echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
-                        if ($partner_logo && $partner_url) :
-                            echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
-                        else :
-                            echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                        $overview_check = get_field('overview_page');
+                        
+                        if($overview_check) :
+                            echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-full">';
+                            if ($partner_logo && $partner_url) :
+                                echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
+                            else :
+                                echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                            endif;
+                            echo '</div>';
                         endif;
-                        echo '</div>';
                     endwhile;
                     wp_reset_postdata(); // Reset post data
                 else :
@@ -65,14 +68,17 @@
                     $partner_query->the_post();
                     $partner_logo = get_field('logo_edited');
                     $partner_url = get_field('website_url');
-
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
-                    if ($partner_logo && $partner_url) :
-                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
-                    else :
-                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                    $overview_check = get_field('overview_page');
+                    
+                    if($overview_check) :
+                        echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-full">';
+                        if ($partner_logo && $partner_url) :
+                            echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
+                        else :
+                            echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                        endif;
+                        echo '</div>';
                     endif;
-                    echo '</div>';
                 endwhile;
                 wp_reset_postdata(); // Reset post data
             else :
@@ -106,14 +112,17 @@
                     $partner_query->the_post();
                     $partner_logo = get_field('logo_edited');
                     $partner_url = get_field('website_url');
+                    $overview_check = get_field('overview_page');
 
-                    echo '<div class="text-center partner-card flex justify-center items-center pr-40 w-full md:w-1/2 xl:w-full">';
-                    if ($partner_logo && $partner_url) :
-                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
-                    else :
-                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                    if($overview_check) :
+                        echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-full">';
+                        if ($partner_logo && $partner_url) :
+                            echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
+                        else :
+                            echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                        endif;
+                        echo '</div>';
                     endif;
-                    echo '</div>';
                 endwhile;
                 wp_reset_postdata(); // Reset post data
             else :
