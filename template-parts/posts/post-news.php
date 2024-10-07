@@ -9,7 +9,7 @@
                         $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'featured-image-overview');
                     ?>
                     <div class="featured-image">
-                        <img src="<?php echo $full_image_url[0]; ?>" alt="<?php the_title(); ?>" class="size-featured-image-overview" />
+                        <img src="<?php echo $full_image_url[0]; ?>" alt="<?php the_title(); ?>" class="size-featured-image-overview xl:max-h-[700px]" />
                     </div>
                     <?php else : ?>
                     <div class="featured-image">
