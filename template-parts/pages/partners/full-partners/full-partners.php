@@ -137,7 +137,7 @@
 
         <div class="st-container st-container-grid mt-16 xl:mt-32">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-[#00151F] font-[545] w-full"><?php esc_html_e( 'Verbandspartner / Stiftung', 'stricker' ) ?></p>
+                <p class="st-subtitle-i text-[#00151F] font-[545] w-full whitespace-nowrap"><?php esc_html_e( 'Verbandspartner / Stiftung', 'stricker' ) ?></p>
                 <hr class="w-full border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap">
