@@ -134,8 +134,8 @@
 
         <div class="st-container st-container-grid">
             <div class="col-span-2 md:col-span-4 xl:col-span-10 mb-0 md:mb-14 xl:mb-48 mt-5 md:mt-14 xl:mt-20">
-                <span class="st-subtitle-i text-light-blue font-[545]"><?php esc_html_e( 'Die vollständige Liste der Partner steht zum', 'stricker' )  ?></span>
-                <a href="<?php the_field( 'partners_pdf_link' ); ?>" target="_blank" class="st-subtitle-i font-[545] text-blue underline"><?php esc_html_e( 'Download bereit', 'stricker' ) ?></a>
+                <span class="st-subtitle-i text-light-blue font-[545]"><?php esc_html_e( 'Die vollständige Liste der Partner finden Sie', 'stricker' )  ?></span>
+                <a href="<?php the_field( 'partners_pdf_link' ); ?>" target="_blank" class="st-subtitle-i font-[545] text-blue underline"><?php esc_html_e( 'hier', 'stricker' ) ?></a>
             </div>
         </div>
     </div>
