@@ -10,6 +10,7 @@
                 $partner_query = new WP_Query(array(
                     'post_type' => 'partner',
                     'posts_per_page' => -1,
+                    'order' => 'ASC',
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'partner-type',
@@ -54,6 +55,7 @@
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
                 'posts_per_page' => -1,
+                'order' => 'ASC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'partner-type',
@@ -97,6 +99,7 @@
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
+                'order' => 'ASC',
                 'posts_per_page' => -1,
                 'tax_query' => array(
                     array(
@@ -142,6 +145,7 @@
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
                 'posts_per_page' => -1,
+                'order' => 'ASC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'partner-type',
@@ -186,6 +190,7 @@
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
                 'posts_per_page' => -1,
+                'order' => 'ASC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'partner-type',
@@ -230,6 +235,7 @@
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
                 'posts_per_page' => -1,
+                'order' => 'ASC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'partner-type',
@@ -274,6 +280,7 @@
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
                 'posts_per_page' => -1,
+                'order' => 'ASC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'partner-type',
