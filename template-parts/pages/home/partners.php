@@ -19,7 +19,10 @@
                             if($overview_check) :
                                 echo '<div class="swiper-slide text-center partner-card flex justify-center">';
                                 if ($partner_logo && $partner_url) :
-                                    echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
+                                    $img_attributes = array(
+                                        'class' => 'partner-logo max-h-[108px]', // Add your custom classes here
+                                    );
+                                    echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full', false, $img_attributes ) . '</a>';
                                 else :
                                     echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                                 endif;
