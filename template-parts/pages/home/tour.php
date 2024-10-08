@@ -89,7 +89,7 @@
             </div>
             <div class="col-span-6 xl:col-span-2">
                 <p class="font-transducerCondensed text-[14px] md:text-[26px] italic font-[340px] leading-9 tracking-[4.8px] md:tracking-[10.4px] text-blue uppercase border-b-[10px] border-blue pb-0 md:pb-[16px] text-right xl:text-left"><?php esc_html_e( 'Aktuelles', 'stricker' ) ?></p>
-                <div class="pt-1 md:pt-6 pb-8 md:pb-10 xl:border-b-2 border-blue xl:max-h-[192px]">
+                <div class="pt-1 md:pt-6 pb-8 md:pb-16 xl:border-b-2 border-blue xl:max-h-[196px]">
                 <?php
                 $current_date = date('Ymd');
                 $tournament_query = new WP_Query(array(
