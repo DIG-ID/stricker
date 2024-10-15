@@ -57,7 +57,7 @@
 								$end_date_display = date('d/m/Y', strtotime($end_date));
 								?>
 								<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('Aktuelles', 'stricker'); ?></p>
-								<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue underline text-nowrap single-line"><?php the_title(); ?></p>
+								<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php the_title(); ?></p>
 								<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php echo $start_date_display; ?></p>
 								<?php
 								// If a matching tournament is found, set flag to true and break out of the loop
@@ -72,7 +72,7 @@
 					if (!$tournament_found) :
 						?>
 						<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('Aktuelles', 'stricker'); ?></p>
-						<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue underline text-nowrap single-line"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></p>
+						<p class="font-transducer font-[500] text-[16px] uppercase text-light-blue text-nowrap single-line"><?php esc_html_e('Kein aktuelles Turnier', 'stricker'); ?></p>
 						<p class="font-transducer font-bold text-[10px] leading-[14px] text-dark-blue"><?php esc_html_e('-', 'stricker'); ?></p>
 					<?php endif; ?>
 					
