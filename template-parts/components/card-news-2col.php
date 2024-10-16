@@ -12,11 +12,11 @@
             </div>
         <?php endif; 
         $formatted_date = get_the_date('d/m/y');
-        echo '<p class="st-body-dates text-blue px-8 mb-4">' . $formatted_date . '</p>';
+        echo '<p class="st-body-dates text-blue px-8 mb-1 md:mb-4">' . $formatted_date . '</p>';
         ?>
         <h2 class="st-subtitle-i text-dark-blue px-8"><?php the_title(); ?></h2>
         
-        <div class="col-span-4 px-8 py-10">
+        <div class="col-span-4 px-8 py-4 md:py-10">
             <a href="<?php the_permalink(); ?>" class="btn-arrow-caps !normal-case text-blue"><?php esc_html_e( 'Mehr erfahren', 'stricker' ) ?></a>
         </div>
     </div>

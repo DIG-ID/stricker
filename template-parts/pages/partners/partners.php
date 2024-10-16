@@ -1,9 +1,9 @@
 <section class="section-partners bg-dark-blue -mt-[1px]">
-	<div class="st-grid">
+	<div class="st-grid !px-0">
         <div class="st-container st-container-grid">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue font-[545] w-full"><?php esc_html_e( 'Hauptpartner', 'stricker' ) ?></p>
-                <hr class="w-full border-2 border-blue mt-5 mb-10">
+                <p class="st-subtitle-i text-light-blue md:font-[545] w-full"><?php esc_html_e( 'Hauptpartner', 'stricker' ) ?></p>
+                <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
                 <?php
@@ -46,8 +46,8 @@
 
         <div class="st-container st-container-grid mt-16 xl:mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue font-[545] w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
-                <hr class="w-full border-2 border-blue mt-5 mb-10">
+                <p class="st-subtitle-i text-light-blue md:font-[545] w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
+                <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
             <?php
@@ -90,8 +90,8 @@
 
         <div class="st-container st-container-grid mt-16 xl:mt-48">
             <div class="col-span-1 md:col-span-2 xl:col-span-2">
-                <p class="st-subtitle-i text-light-blue font-[545] w-full"><?php esc_html_e( 'Ausrüster', 'stricker' ) ?></p>
-                <hr class="w-full border-2 border-blue mt-5 mb-10">
+                <p class="st-subtitle-i text-light-blue md:font-[545] w-full"><?php esc_html_e( 'Ausrüster', 'stricker' ) ?></p>
+                <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
             <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
             <?php

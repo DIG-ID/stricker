@@ -1,5 +1,5 @@
 <section class="section-partners bg-dark-blue -mt-[1px]">
-	<div class="grid grid-cols-2 md:grid-cols-8 xl:grid-cols-12 xl:gap-8 px-6 md:px-0">
+	<div class="grid grid-cols-2 md:grid-cols-8 xl:grid-cols-12 xl:gap-8 px-0">
         <?php
         $news_args = array(
             'post_type'      => 'news',

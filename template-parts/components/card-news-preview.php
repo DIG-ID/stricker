@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news mb-10 bg-light-blue border-t-[7px] border-blue' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news mb-4 xl:mb-10 bg-light-blue border-t-[7px] border-blue' ); ?>>
     <a href="<?php the_permalink(); ?>" class="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-3">
         <div class="col-span-1 md:col-span-2 xl:col-span-1 col-start-1 md:col-start-1 xl:col-start-1">
             <?php if (has_post_thumbnail()) : 

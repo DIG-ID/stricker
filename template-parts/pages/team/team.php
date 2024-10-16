@@ -26,8 +26,8 @@
         <div class="st-container grid grid-cols-2 md:grid-cols-4 xl:grid-cols-9">
             <div <?php post_class( 'card-team col-span-2 md:col-span-8 xl:col-span-12 mb-24' ); ?>>
                 <div class="w-full relative bg-blue">
-                    <div class="flex flex-col xl:flex-row justify-center items-start xl:items-center py-[70px] px-7 2xl:px-0">
-                        <img class="mb-16 xl:mb-0 mr-0 md:mr-[85px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/logo-dark.svg" alt="logo" title="logo" />
+                    <div class="flex flex-col xl:flex-row justify-center items-start xl:items-center py-[30px] md:py-[70px] px-7 2xl:px-0">
+                        <img class="mb-8 md:mb-16 xl:mb-0 mr-0 md:mr-[85px] max-w-[70px] md:max-w-none" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/logo-dark.svg" alt="logo" title="logo" />
                         <h2 class="st-subtitle-big text-dark-blue max-w-[350px] xl:max-w-none"><?php the_field( 'message' ); ?></h2>
                     </div>
                 </div>

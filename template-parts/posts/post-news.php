@@ -1,5 +1,5 @@
 <div class="post-news pt-52 xl:pt-48 pb-16 md:pb-32 xl:pb-60 overflow-hidden">
-	<div class="st-grid">
+	<div class="st-grid !px-0">
         <div class="st-container st-container-grid">
             <div class="col-span-2 md:col-span-6 xl:col-span-10"><?php do_action( 'breadcrumbs' ); ?></div>
             

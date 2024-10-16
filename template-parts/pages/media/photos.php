@@ -3,14 +3,14 @@
 		<div class="st-container st-container-grid">
 			<div class="col-span-1 md:col-span-2 xl:col-span-2">
 				<h2 class="st-subtitle-i font-[545] text-dark-blue w-full"><?php the_field( 'photos_title' ); ?></h2>
-				<hr class="w-full border-2 border-blue mt-5 mb-12 md:mb-24">
+				<hr class="w-full border-2 border-blue mt-5 mb-8 md:mb-24">
 			</div>
 		</div>
 
 
 		<div class="st-container st-container-grid">
 			<div class="col-span-10">
-				<div class="filters-wrapper flex gap-x-5 mb-11 xl:mb-24 flex-wrap">
+				<div class="filters-wrapper flex gap-x-5 mb-6 md:mb-11 xl:mb-24 flex-wrap">
 					<?php
 					$media_taxonomies = array( 'media-year', 'tournament', 'surface', 'type-of-shot' );
 					foreach ( $media_taxonomies as $media_tax ) :
