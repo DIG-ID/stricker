@@ -1,9 +1,9 @@
 <section class="section-videos bg-page-bg-light pb-52">
-	<div class="st-grid">
+	<div class="st-grid !px-0">
 		<div class="st-container st-container-grid">
 			<div class="col-span-1 md:col-span-2 xl:col-span-2">
 				<h2 class="st-subtitle-i font-[545] text-dark-blue w-full"><?php the_field( 'videos_title' ); ?></h2>
-				<hr class="w-full border-2 border-blue mt-5 mb-24">
+				<hr class="w-full border-2 border-blue mt-5 mb-8 md:mb-24">
 			</div>
 		</div>
 		<div class="st-container st-container-grid">

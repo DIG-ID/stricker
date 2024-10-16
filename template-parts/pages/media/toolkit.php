@@ -1,9 +1,9 @@
 <section class="section-toolkit bg-page-bg-light pb-40">
-	<div class="st-grid">
+	<div class="st-grid !px-0">
 		<div class="st-container st-container-grid">
 			<div class="col-span-1 md:col-span-2 xl:col-span-2">
 				<h2 class="st-subtitle-i font-[545] text-dark-blue w-full"><?php the_field( 'brand_toolkit_title' ); ?></h2>
-				<hr class="w-full border-2 border-blue mt-5 mb-10">
+				<hr class="w-full border-2 border-blue mt-5 mb-8 md:mb-10">
 			</div>
 		</div>
 		<div class="st-container st-container-grid">

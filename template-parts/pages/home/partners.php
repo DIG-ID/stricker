@@ -20,7 +20,7 @@
                                 echo '<div class="swiper-slide text-center partner-card flex justify-center">';
                                 if ($partner_logo && $partner_url) :
                                     $img_attributes = array(
-                                        'class' => 'partner-logo max-h-[108px]', // Add your custom classes here
+                                        'class' => 'partner-logo max-h-[108px] object-contain', // Add your custom classes here
                                     );
                                     echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full', false, $img_attributes ) . '</a>';
                                 else :

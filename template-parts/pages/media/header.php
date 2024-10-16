@@ -1,5 +1,5 @@
 <section class="page-header page-header__media bg-page-bg-light text-dark-blue pt-40 md:pt-60 xl:pt-[275px] pb-20 xl:pb-40">
-	<div class="st-grid">
+	<div class="st-grid !px-0">
 		<div class="st-container st-container-grid">
 			<div class="col-span-2 md:col-span-4 xl:col-span-3">
 				<?php do_action( 'breadcrumbs' ); ?>

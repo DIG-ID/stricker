@@ -1,5 +1,5 @@
-<section class="page-contact-content bg-dark-blue pb-0 md:pb-36 xl:pb-48">
-	<div class="st-grid">
+<section class="page-contact-content bg-dark-blue pb-10 md:pb-36 xl:pb-48">
+	<div class="st-grid !px-0">
 		<div class="st-container st-container-grid">
 			<div class="col-span-6	 md:col-span-6 xl:col-span-4">
 				<h2 class="inline-block pr-9 font-transducerCondensed font-[545] tracking-wide xl:tracking-normal text-white text-base md:text-[32px] leading-[19px] md:leading-[39px] italic relative after:w-full after:bg-blue after:rounded-full after:h-[2px] after:block after:xl:mt-8 after:md:mt-4 after:mt-2 mb-6 md:mb-11 xl:mb-20"><?php the_field( 'contacts_title' ); ?></h2>
