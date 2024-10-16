@@ -314,5 +314,32 @@
             ?>
             </div>
         </div>
+
+        <div class="st-container st-container-grid !gap-y-0 mt-16 xl:mt-32 mb-14 xl:mb-48">
+            <div class="col-span-1 md:col-span-2 xl:col-span-2">
+                <p class="st-subtitle-i text-[#00151F] font-[545] w-full"><?php esc_html_e( 'Gönner', 'stricker' ) ?></p>
+                <hr class="w-full border-2 border-blue mt-5 mb-10">
+            </div>
+            <div class="col-span-2 md:col-span-4 xl:col-span-5 col-start-1 md:col-start-1 xl:col-start-1">
+                <?php
+                if( have_rows('patrons_list') ):
+                    while( have_rows('patrons_list') ) : the_row(); ?>
+                    <a href="<?php echo get_sub_field( 'link' ); ?>" target="_blank" class="block st-body-dates font-[545] text-dark-blue hover:underline mb-3"><?php echo get_sub_field( 'name' ); ?></a>
+                <?php
+                endwhile;
+                endif;
+                ?>
+            </div>
+            <div class="col-span-2 md:col-span-4 xl:col-span-5 col-start-1 md:col-start-1 xl:col-start-6">
+                <?php
+                if( have_rows('patrons_list_2') ):
+                    while( have_rows('patrons_list_2') ) : the_row(); ?>
+                    <a href="<?php echo get_sub_field( 'link' ); ?>" target="_blank" class="block st-body-dates font-[545] text-dark-blue hover:underline mb-3"><?php echo get_sub_field( 'name' ); ?></a>
+                <?php
+                endwhile;
+                endif;
+                ?>
+            </div>
+        </div>
     </div>
 </section>
