@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					spaceBetween: 30,
 				},
 			},
-			spaceBetween: 30,
+			spaceBetween: 0,
 			loop: true,
 			speed: 6000,
 			slidesPerView: 4,
