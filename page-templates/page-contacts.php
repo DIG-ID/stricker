@@ -10,7 +10,7 @@ if ( have_posts() ) :
 		do_action( 'before_main_content' );
 			get_template_part( 'template-parts/pages/contact/header' );
 			get_template_part( 'template-parts/pages/contact/content' );
-			get_template_part( 'template-parts/pages/contact/support' );	
+			//get_template_part( 'template-parts/pages/contact/support' );
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
