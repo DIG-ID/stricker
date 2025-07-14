@@ -6,7 +6,7 @@
                     <?php the_field( 'support_over_title' ); ?>
                 </h2>
                 <?php if ( ICL_LANGUAGE_CODE === 'en' ) : ?>
-                    <hr class="w-[110px] md:w-[215px] xl:w-[195px] h-[2px] bg-gradient-to-r from-[#14A5BB] to-[#14A5BB] rounded-full border-none" />
+                    <hr class="w-[110px] md:w-[213px] xl:w-[190px] h-[2px] bg-gradient-to-r from-[#14A5BB] to-[#14A5BB] rounded-full border-none" />
                 <?php elseif ( ICL_LANGUAGE_CODE === 'de' ) : ?>
                     <hr class="w-[123px] md:w-[245px] xl:w-[223px] h-[2px] bg-gradient-to-r from-[#14A5BB] to-[#14A5BB] rounded-full border-none" />
                 <?php endif; ?>
