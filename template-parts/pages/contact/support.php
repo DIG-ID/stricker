@@ -5,7 +5,10 @@
                 <h2 class="flex items-center gap-x-6 font-transducerCondensed font-[545] tracking-wide xl:tracking-normal text-white text-base md:text-[32px] leading-[39px] italic md:mb-2 xl:mb-3">
                     <?php the_field( 'support_over_title' ); ?>
                 </h2>
-                <hr class="h-[2px] w-[123px] md:w-[245px] xl:w-[223px] bg-gradient-to-r from-[#14A5BB] to-[#14A5BB] rounded-full border-none [lang='en']:w-[110px] [lang='en']:xl:w-[210px] [lang='en']:md:w-[235px]" />
+                <hr class="h-[2px] w-[123px] md:w-[245px] xl:w-[223px] bg-gradient-to-r from-[#14A5BB] to-[#14A5BB] rounded-full border-none 
+                [lang='en']:w-[110px] 
+                md:[lang='en']:w-[235px] 
+                xl:[lang='en']:w-[210px]" />
 			</div>       
                 <?php 
                     $image = get_field('support_picture');
