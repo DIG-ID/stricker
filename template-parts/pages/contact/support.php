@@ -26,14 +26,15 @@
                     <p class="font-transducer font-normal text-[10px] md:text-[17px] text-white leading-[18px] md:leading-[29px] tracking-[0.2px] md:tracking-[0.34px] pb-[30px] md:pb-[50px] xl:pb-[75px] w-[300px] md:w-[450px]">
                         <?php the_field( 'support_text' ); ?>
                     </p>
-                    <?php 
-                        $file = get_field('support_download_button');
-                        if ($file):
-                            $url = $file['url'];
-                            $title = $file['title']
-                        ?>
-                            <a href="<?php echo esc_url($url); ?>" class="btn-download text-[#14A5BB] pb-2">
-                                <?php echo esc_html($title); ?>
+                        <?php
+                        $blink = get_field('support_download_button');
+                        if ($blink) :
+                            $link_url    = $blink['url'];
+                            $link_title  = $blink['title'];
+                            $link_target = $blink['target'] ? $blink['target'] : '_self';
+                            ?>
+                            <a class="btn-download text-[#14A5BB] pb-2" href="<?= esc_url($link_url); ?>" target="<?= esc_attr($link_target); ?>">
+                                 <?= esc_html($link_title); ?>
                             </a>
 				    <?php endif; ?>
                     <p class="font-transducer font-normal text-[10px] md:text-[17px] text-white leading-[18px] md:leading-[29px] tracking-[0.2px] md:tracking-[0.34px]">
