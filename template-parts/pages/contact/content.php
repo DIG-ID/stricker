@@ -30,7 +30,7 @@
 				$management2 = get_field( 'contacts_management2' );
 				if ( $management ) :
 					?>
-					<p class="flex items-center gap-x-6 font-transducerCondensed font-[340] tracking-wide xl:tracking-normal text-white text-base md:text-[45px] leading-none ml:leading-[50px] italic b-12 md:mb-32 xl:mb-8">
+					<p class="flex items-center gap-x-6 font-transducerCondensed font-[340] tracking-wide xl:tracking-normal text-white text-base md:text-[45px] leading-none ml:leading-[50px] italic b-12 md:mb-32 xl:mb-0">
 						<svg class="w-4 h-4 md:w-8 md:h-8" viewBox="0 0 271 249" fill="#14A5BB" xmlns="http://www.w3.org/2000/svg">
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M4.69,248.78c-1.32,0-2.59-.56-3.46-1.52-.88-.97-1.32-2.28-1.21-3.59l6.93-74.37c1.09-11.83,9.13-21.78,20.48-25.35l61.34-19.24c.45-.14.93-.22,1.41-.22,2.05,0,3.85,1.32,4.46,3.28.37,1.2.26,2.47-.32,3.57-.58,1.1-1.56,1.92-2.75,2.3l-61.34,19.24c-7.73,2.42-13.21,9.21-13.95,17.27l-6.5,69.84,251.43-.58-7.03-69.25c-.76-8.06-6.24-14.85-13.96-17.27l-61.33-19.24c-1.2-.38-2.18-1.19-2.75-2.31-.58-1.1-.69-2.37-.32-3.56.62-1.96,2.41-3.28,4.46-3.28.48,0,.96.07,1.41.22l61.33,19.24c11.35,3.56,19.39,13.51,20.49,25.35l6.92,74.37c.12,1.31-.32,2.62-1.2,3.59-.89.97-2.16,1.52-3.47,1.52H4.69Z"/>
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M135.22,160.5c-.84,0-1.67-.22-2.39-.65l-45.02-26.57c-1.07-.64-1.84-1.65-2.16-2.86-.32-1.21-.14-2.47.5-3.55.84-1.42,2.39-2.31,4.04-2.31.83,0,1.65.23,2.38.65l42.92,25.32,42.37-25.32c.72-.43,1.54-.65,2.37-.65,1.66,0,3.21.88,4.05,2.31,1.3,2.23.56,5.1-1.66,6.41l-45.02,26.57c-.71.43-1.55.65-2.38.65Z"/>
@@ -46,7 +46,7 @@
 				endif;
 				if ( $management2 ) :
 					?>
-					<p class="flex items-center gap-x-6 font-transducerCondensed font-[340] tracking-wide xl:tracking-normal text-white text-base md:text-[45px] leading-none ml:leading-[50px] italic b-12 md:mb-32 xl:mb-0">
+					<p class="flex items-center gap-x-6 font-transducerCondensed font-[340] tracking-wide xl:tracking-normal text-white text-base md:text-[45px] leading-none ml:leading-[50px] italic b-12 md:mb-32 xl:mb-0 xl:mt-12">
 						<svg class="w-4 h-4 md:w-8 md:h-8" viewBox="0 0 271 249" fill="#14A5BB" xmlns="http://www.w3.org/2000/svg">
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M4.69,248.78c-1.32,0-2.59-.56-3.46-1.52-.88-.97-1.32-2.28-1.21-3.59l6.93-74.37c1.09-11.83,9.13-21.78,20.48-25.35l61.34-19.24c.45-.14.93-.22,1.41-.22,2.05,0,3.85,1.32,4.46,3.28.37,1.2.26,2.47-.32,3.57-.58,1.1-1.56,1.92-2.75,2.3l-61.34,19.24c-7.73,2.42-13.21,9.21-13.95,17.27l-6.5,69.84,251.43-.58-7.03-69.25c-.76-8.06-6.24-14.85-13.96-17.27l-61.33-19.24c-1.2-.38-2.18-1.19-2.75-2.31-.58-1.1-.69-2.37-.32-3.56.62-1.96,2.41-3.28,4.46-3.28.48,0,.96.07,1.41.22l61.33,19.24c11.35,3.56,19.39,13.51,20.49,25.35l6.92,74.37c.12,1.31-.32,2.62-1.2,3.59-.89.97-2.16,1.52-3.47,1.52H4.69Z"/>
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M135.22,160.5c-.84,0-1.67-.22-2.39-.65l-45.02-26.57c-1.07-.64-1.84-1.65-2.16-2.86-.32-1.21-.14-2.47.5-3.55.84-1.42,2.39-2.31,4.04-2.31.83,0,1.65.23,2.38.65l42.92,25.32,42.37-25.32c.72-.43,1.54-.65,2.37-.65,1.66,0,3.21.88,4.05,2.31,1.3,2.23.56,5.1-1.66,6.41l-45.02,26.57c-.71.43-1.55.65-2.38.65Z"/>
