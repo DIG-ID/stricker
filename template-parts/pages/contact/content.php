@@ -56,7 +56,7 @@
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M52.09,248.76c-1.25-.13-2.37-.74-3.15-1.71s-1.15-2.19-1.02-3.44l5-47.81c.25-2.39,2.26-4.2,4.66-4.2,3.05.3,4.93,2.61,4.67,5.17l-5.02,47.81c-.25,2.39-2.25,4.19-4.66,4.19l-.48-.02Z"/>
 							<path vector-effect="non-scaling-stroke" stroke="#14A5BB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" d="M217.87,248.78c-2.4,0-4.4-1.8-4.66-4.19l-5-47.81c-.13-1.25.23-2.47,1.02-3.44.79-.97,1.9-1.58,3.15-1.71h.05c2.87,0,4.85,1.8,5.09,4.17l5.02,47.81c.26,2.57-1.61,4.88-4.17,5.15l-.49.02Z"/>
 						</svg>
-						<span><?php echo $management; ?></span>
+						<span><?php echo $management2; ?></span>
 					</p>
 					<?php
 				endif;
