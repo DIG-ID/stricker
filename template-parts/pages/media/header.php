@@ -10,7 +10,7 @@
 			</div>
 			<div class="col-span-2 md:col-span-4 xl:col-span-4 xl:col-start-7">
 				<div class="info border border-blue rounded-xl px-11 py-8">
-					<p class="font-transducer font-normal text-[10px] md:text-[17px] text-blue leading-[19px] md:leading-[29px] tracking-[0.2px] md:tracking-[0.34px] mb-7"><?php the_field( 'header_notification_text' ); ?></p>
+					<p class="font-transducer font-normal text-[10px] md:text-[17px] text-blue leading-[19px] md:leading-[29px] tracking-[0.2px] md:tracking-[0.34px] mb-0"><?php the_field( 'header_notification_text' ); ?></p>
 						<?php
 						if ( get_field( 'header_notification_disclaimer' ) ) :
 							?>
