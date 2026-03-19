@@ -6,8 +6,8 @@ function stricker_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'main-menu'        => __( 'Main Menu', 'stricker' ),
-			'menu-footer'      => __( 'Menu Footer', 'stricker' ),
+			'main-menu'   => __( 'Main Menu', 'stricker' ),
+			'menu-footer' => __( 'Menu Footer', 'stricker' ),
 		)
 	);
 
@@ -32,7 +32,6 @@ function stricker_theme_setup() {
 	add_image_size( 'media-thumbnail', 600, 480, array( 'center', 'center' ) );
 
 	//add_image_size( 'image-square', 1024, 1024, array( 'center', 'center' ) );
-
 }
 
 add_action( 'after_setup_theme', 'stricker_theme_setup' );
@@ -63,33 +62,26 @@ function stricker_theme_footer_widgets_init() {
 			'after_title'   => '',
 		)
 	);
-
 }
 
 add_action( 'widgets_init', 'stricker_theme_footer_widgets_init' );
-
-
-
 
 /**
  * Enqueue styles and scripts
  */
 function stricker_theme_enqueue_styles() {
 
-	//Get the theme data
+	// Get the theme data.
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 
-	// Register Theme main style.
-	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
-	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'theme-styles' );
-	//https://use.typekit.net/evg0ous.css first loaded fonts library backup
-	wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
+	wp_enqueue_style( 'typekit', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
 
-	wp_enqueue_script( 'jquery' );
+	wp_script_add_data( 'typekit', 'async', true );
+
+	wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
+
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, false );
-	
 }
 
 add_action( 'wp_enqueue_scripts', 'stricker_theme_enqueue_styles' );
