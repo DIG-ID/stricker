@@ -75,13 +75,27 @@ function stricker_theme_enqueue_styles() {
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 
-	wp_enqueue_style( 'typekit', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
+	wp_enqueue_style(
+		'typekit',
+		'https://use.typekit.net/buy6qwo.css',
+		array(),
+		false // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion
+	);
 
-	wp_script_add_data( 'typekit', 'async', true );
+	wp_enqueue_style(
+		'theme-styles',
+		get_theme_file_uri( '/dist/css/main.css' ),
+		array(),
+		$theme_version
+	);
 
-	wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
-
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, false );
+	wp_enqueue_script(
+		'theme-scripts',
+		get_theme_file_uri( '/dist/js/main.js' ),
+		array( 'jquery' ),
+		$theme_version,
+		false
+	);
 }
 
 add_action( 'wp_enqueue_scripts', 'stricker_theme_enqueue_styles' );
