@@ -1,7 +1,7 @@
 <section class="section-partners bg-dark-blue pb-8">
     <div class="st-grid relative">
         <div class="col-span-2 md:col-span-6 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2 py-5 md:py-24 border-y-2 border-blue">
-            <div class="swiper swiper-partner">
+            <div class="swiper swiper-partner" aria-hidden="true">
                 <div class="swiper-wrapper">
                     <?php
                     $partner_query = new WP_Query(array(
@@ -22,7 +22,7 @@
                                     $img_attributes = array(
                                         'class' => 'partner-logo max-h-[108px] object-contain', // Add your custom classes here
                                     );
-                                    echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full', false, $img_attributes ) . '</a>';
+                                    echo '<a href="' . esc_url($partner_url) . '" target="_blank" tabindex="-1" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full', false, $img_attributes ) . '</a>';
                                 else :
                                     echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                                 endif;
