@@ -71,15 +71,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
@@ -116,15 +116,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
@@ -161,15 +161,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
@@ -206,15 +206,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
@@ -251,15 +251,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
@@ -296,15 +296,15 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    if ( empty( $partner_logo ) ) :
-                        continue;
-                    endif;
                     echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
-                    if ( ! empty( $partner_url ) ) :
-                        echo '<a href="' . esc_url( $partner_url ) . '" target="_blank" class="partner-link"><img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo"></a>';
+                    if (!empty($partner_logo) && !empty($partner_url)) :
+                        echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
+                    elseif (!empty($partner_logo) && empty($partner_url)) :
+                        echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<img src="' . esc_url( $partner_logo ) . '" alt="' . esc_attr( get_the_title() ) . '" class="partner-logo">';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
+
                     echo '</div>';
                 endwhile;
                 wp_reset_postdata();
