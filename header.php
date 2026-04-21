@@ -14,5 +14,5 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB4JNL4"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<?php do_action( 'wp_body_open' ); ?>
-		<a class="skip-link" href="#main-content"><?php esc_html_e( 'Skip to content', 'stricker' ); ?></a>
+		<!-- <a class="skip-link" href="#main-content"><?php esc_html_e( 'Skip to content', 'stricker' ); ?></a> -->
 		<?php get_template_part( 'template-parts/header', 'main' ); ?>
