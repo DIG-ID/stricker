@@ -49,7 +49,7 @@
                 <p class="st-subtitle-i text-light-blue md:font-[545] w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
                 <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap justify-start">
+            <div class="col-span-2 md:col-span-4 xl:col-span-7 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap justify-start">
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
