@@ -275,7 +275,7 @@
                 <p class="st-subtitle-i text-[#00151F] md:font-[545] w-full"><?php esc_html_e( 'Partner', 'stricker' ) ?></p>
                 <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap">
+            <div class="col-span-2 md:col-span-4 xl:col-span-7 flex flex-col md:flex-row md:flex-wrap">
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
@@ -296,13 +296,13 @@
                     $partner_logo = get_the_post_thumbnail_url(get_the_ID(), '');
                     $partner_url = get_field('website_url');
             
-                    echo '<div class="text-left partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
+                    echo '<div class="text-center partner-card flex justify-start items-center pr-20 pb-14 w-full md:w-1/2 xl:w-[25%]">';
                     if (!empty($partner_logo) && !empty($partner_url)) :
                         echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></a>';
                     elseif (!empty($partner_logo) && empty($partner_url)) :
                         echo '<p class="partner-link"><img src="' . esc_url($partner_logo) . '" alt="' . get_the_title() . '" class="partner-logo"></p>';
                     else :
-                        echo '<p class="text-left">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
+                        echo '<p class="text-center">' . esc_html__('Partner logo or URL not set.', 'stricker') . '</p>';
                     endif;
 
                     echo '</div>';
