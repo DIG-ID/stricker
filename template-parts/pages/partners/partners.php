@@ -71,7 +71,7 @@
                     $overview_check = get_field('overview_page');
                     
                     if($overview_check) :
-                        echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-full">';
+                        echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-auto">';
                         if ($partner_logo && $partner_url) :
                             echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
                         else :
