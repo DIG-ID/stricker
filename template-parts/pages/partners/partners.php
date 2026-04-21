@@ -49,7 +49,7 @@
                 <p class="st-subtitle-i text-light-blue md:font-[545] w-full"><?php esc_html_e( 'Premiumpartner', 'stricker' ) ?></p>
                 <hr class="w-full border md:border-2 border-blue mt-5 mb-10">
             </div>
-            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
+            <div class="col-span-2 md:col-span-4 xl:col-span-10 flex flex-col md:flex-row md:flex-wrap xl:flex-nowrap justify-start">
             <?php
             $partner_query = new WP_Query(array(
                 'post_type' => 'partner',
@@ -71,7 +71,7 @@
                     $overview_check = get_field('overview_page');
                     
                     if($overview_check) :
-                        echo '<div class="text-center partner-card flex justify-start items-center pr-40 w-full md:w-1/2 xl:w-full">';
+                        echo '<div class="text-center partner-card flex justify-start items-start pr-40 w-full md:w-1/2 xl:w-full">';
                         if ($partner_logo && $partner_url) :
                             echo '<a href="' . esc_url($partner_url) . '" target="_blank" class="partner-link">' . wp_get_attachment_image( $partner_logo, 'full' ) . '</a>';
                         else :
